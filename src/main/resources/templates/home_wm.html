@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-我们</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<style type="text/css">
+.qie_a{width: 68%; margin: 0 auto;}
+.qie_a ul{width: 99.9%; float: left; border-left: 1px #9a9a9a solid;}
+.qie_a ul .kjy{ width: 33.2%; float: left; border-right: 1px #9a9a9a solid; line-height: 35px; text-align: center; font-size:12px; cursor: pointer;}
+.qie_a ul .kjy_a{ width: 33.2%; float: left; border-right: 1px #c65c21 solid; margin-left: -1px; padding-right: 1px; display: block; line-height: 35px; text-align: center; font-size:12px; cursor: pointer; background: #c65c21; color: #ffffff;}
+</style>
+</head>
+<body>
+<!-- header -->
+<header class="ha_a" id="box">
+<div class="ha_a_a menu">
+<div class="dl_a">
+<em><img th:src="@{../images/home/logo.jpg}" /></em>
+</div>
+<div class="dl_b">
+<ul class="ha_b">
+<li><a th:href="@{/}">首页</a></li>
+<li class="li_3"><a th:href="@{/gsjj}">我们</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/gsjj}">公司简介</a></dd>
+<dd><a th:href="@{/qywh}">企业文化</a></dd>
+<dd class="lastItem"><a th:href="@{/fzlc}">发展历程</a></dd>
+</dl>
+</li>
+<li class="li_3"><a th:href="@{/ppgs}">品牌</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/ppgs}">品牌故事</a></dd>
+<dd><a th:href="@{/ppfg}">品牌风格</a></dd>
+<dd><a th:href="@{/ppln}">品牌理念</a></dd>
+<dd class="lastItem"><a th:href="@{/ppzx}">品牌资讯</a></dd>
+</dl>
+</li>
+</ul>
+<ul class="ha_d">
+<li class="li_3"><a th:href="@{/xxzx}">形象</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/cxxl}">2018春夏系列</a></dd>
+<dd><a th:href="@{/qdxl}">2018秋冬系列</a></dd>
+<dd class="lastItem"><a th:href="@{/xxzx}">形象VIDEO</a></dd>
+</dl>
+</li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li class="li_3"><a th:href="@{/jmzx}">加盟</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/jmzx}">加盟流程</a></dd>
+<dd class="lastItem"><a th:href="@{/jmzx}">加盟政策</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<!-- header -->
+
+<!-- conter -->
+<div class="ca_a">
+
+<!-- hbt -->
+<div class="pos_a">
+<div class="pos_a_a" id="showDT"><img th:src="${showUrl}" /></div>
+</div>
+<!-- hbt -->
+
+<!-- wm-qiehuan -->
+<div class="qie_a">
+<ul th:if="${status==1}">
+<li class="kjy_a" id="Button51" onclick="TabMoveWm(5,1,3)">公司简介</li>
+<li class="kjy" id="Button52" onclick="TabMoveWm(5,2,3)">企业文化</li>
+<li class="kjy" id="Button53" onclick="TabMoveWm(5,3,3)">发展历程</li>
+</ul>
+<ul th:if="${status==2}">
+<li class="kjy" id="Button51" onclick="TabMoveWm(5,1,3)">公司简介</li>
+<li class="kjy_a" id="Button52" onclick="TabMoveWm(5,2,3)">企业文化</li>
+<li class="kjy" id="Button53" onclick="TabMoveWm(5,3,3)">发展历程</li>
+</ul>
+<ul th:if="${status==3}">
+<li class="kjy" id="Button51" onclick="TabMoveWm(5,1,3)">公司简介</li>
+<li class="kjy" id="Button52" onclick="TabMoveWm(5,2,3)">企业文化</li>
+<li class="kjy_a" id="Button53" onclick="TabMoveWm(5,3,3)">发展历程</li>
+</ul>
+</div>
+<!-- wm-qiehuan -->
+
+<!-- daohang -->
+<div class="dao_h">
+<div class="dao_h_a">
+<span id="dahangcon" th:if="${status==1}">
+<i><a>公司简介</a></i>
+<em><a>我们</a><a>></a></em>
+<em><a>首页</a><a>></a></em>
+</span>
+<span id="dahangcon" th:if="${status==2}">
+<i><a>企业文化</a></i>
+<em><a>我们</a><a>></a></em>
+<em><a>首页</a><a>></a></em>
+</span>
+<span id="dahangcon" th:if="${status==3}">
+<i><a>发展历程</a></i>
+<em><a>我们</a><a>></a></em>
+<em><a>首页</a><a>></a></em>
+</span>
+</div>
+</div>
+<!-- daohang -->
+
+<!-- wm-content -->
+<div class="zwm_a">
+
+<!-- wm-gsjj -->
+<div class="zwm_b" id="ContentBox51" th:style="${change1}">
+<dl>
+<dd><img th:src="@{../images/wm/gsjj/gsjj_1.png}" /></dd>
+<dt>
+<strong>追求自我价值，追求高端品质</strong>
+<b><a></a></b>
+<p>北京盛唐风韵商贸有限公司成立于2010年，重磅推出公司自营品牌“盈然”即“YINGRAN”<br />
+公司实现品牌生产销售一体化，公司产品目标中青年时尚女性，产品定位中高端时尚女装，款式新颖靓丽，颜色灵动跳跃，追求自我价值，追求高端品质 。<br />
+公司采用全国自营的模式，拥有优秀的工作团队以及先进的管理模式，配合高档装修和精致配饰，体现热爱生活，乐于享受传统文化带来时尚。</p>
+</dt>
+</dl>
+</div>
+<!-- wm-gsjj -->
+
+<!-- wm-qywh -->
+<div class="zwm_c" id="ContentBox52" th:style="${change2}">
+<dl>
+<dd>
+<ul class="zwm_c_a">
+<li>
+<strong>品质</strong>
+<p>无论是产品，还是包装的细节，甚至是服务的细节，我们追求做到最好！</p>
+</li>
+<li>
+<strong>责任</strong>
+<p>无论是对员工，还是面对问题，积极寻找解决办法，勇于担当，不推卸责任或拖延！</p>
+</li>
+<li>
+<strong>合作</strong>
+<p>为达致共同目标，彼此相互配合 信赖，先出善手 主动支持</p>
+</li>
+<li>
+<strong>尊重</strong>
+<p>尊重团队每位成员，赞赏他（她）的优点，包容他（她）的不足，共同成长</p>
+</li>
+</ul>
+<i><img th:src="@{../images/wm/qywh/qywh_1.jpg}" /></i>
+</dd>
+<dt><img th:src="@{../images/wm/qywh/qywh_2.jpg}" /></dt>
+</dl>
+</div>
+<!-- wm-qywh -->
+
+<!-- wm-fzlc -->
+<div class="zwm_d" id="ContentBox53" th:style="${change3}">
+<div class="zwm_d_a"><img th:src="@{../images/wm/fzlc/fzlc_1.jpg}" /></div>
+</div>
+<!-- wm-fzlc -->
+
+</div>
+<!-- wm-content -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="fa_a">
+<!-- 1 -->
+<div class="ea_a">
+<div class="ea_a_a">
+<!-- 1-1 -->
+<div class="ea_b">
+<em><img th:src="@{../images/foot_logo.png}" /></em>
+<dl>
+<dd class="ea_b_b">
+<strong><a th:href="@{/jmzx}">加盟</a></strong>
+<ul>
+<li><a th:href="@{/jmzx}">加盟流程</a></li>
+<li><a th:href="@{/jmzx}">加盟政策</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/mdzs}">门店</a></strong>
+<ul>
+
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/xxzx}">形象</a></strong>
+<ul>
+<li><a th:href="@{/cxxl}">2018春夏系列</a></li>
+<li><a th:href="@{/qdxl}">2018秋冬系列</a></li>
+<li><a th:href="@{/xxzx}">形象VIDEO</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/ppgs}">品牌</a></strong>
+<ul>
+<li><a th:href="@{/ppgs}">品牌故事</a></li>
+<li><a th:href="@{/ppfg}">品牌风格</a></li>
+<li><a th:href="@{/ppln}">品牌理念</a></li>
+<li><a th:href="@{/ppzx}">品牌资讯</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/gsjj}">我们</a></strong>
+<ul>
+<li><a th:href="@{/gsjj}">公司简介</a></li>
+<li><a th:href="@{/qywh}">企业文化</a></li>
+<li><a th:href="@{/fzlc}">发展历程</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/}">首页</a></strong>
+<ul>
+
+</ul>
+</dd>
+</dl>
+</div>
+<!-- 1-1 -->
+</div>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="ea_c">
+<div class="ea_c_c">
+<p>北京盛唐风韵商贸有限公司  版权所有 京ICP备14060156号 京公网安备11010502026917</p>
+<span>
+<i>
+<a class="button_weibo" onclick="shareToSinaWB(event)"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="button_qq" onclick="shareToQzone(event)"></a>
+</i>
+<em>点击分享</em>
+<script type="text/javascript" th:src="@{http://v3.jiathis.com/code/jia.js?uid=1}" charset="utf-8"></script>
+</span>
+</div>
+</div>
+<!-- 2 -->
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ea_m">
+<div class="tophb">
+<dl class="tophb_a">
+<em><img th:src="@{../images/weixin_gz.jpg}" /></em>
+<i>盈然-微信公众号</i>
+</dl>
+<dl class="tophb_a">
+<em><img th:src="@{../images/kefu_gz.jpg}" /></em>
+<i>盈然-客服公众号</i>
+</dl>
+</div>
+<div class="ea_m_a">
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-门店</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-mendian.js}"></script>
+</head>
+<body>
+<!-- header -->
+<header class="ap_ha">
+<div class="dao_a">
+<div class="dl_at"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dl_b">
+<div class="dl_b_a"><img th:src="@{../images/app_dh_left.jpg}" /></div>
+<div class="dl_b_b" id="shareBtn"><img th:src="@{../images/app_dh_right.jpg}" /></div>
+</div>
+</div>
+<div class="dao_b" id="opis" style="display:none">
+<div class="dk_a">
+<div class="dk_b">
+<div class="dk_a_a"><img th:src="@{../images/app_close.jpg}" /></div>
+<div class="dk_a_b"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dk_a_c" id="shareBtn2"><img th:src="@{../images/app_link.jpg}" /></div>
+</div>
+<div class="dk_c">
+<ul>
+<li><a th:href="@{/}">首页</a></li>
+<li><a th:href="@{/gsjj}">我们</a></li>
+<li><a th:href="@{/ppgs}">品牌</a></li>
+<li><a th:href="@{/xxzx}">形象</a></li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li id="cle_line"><a th:href="@{/jmzx}">加盟</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<!-- header -->
+<script type="text/javascript">
+$(".dl_b_a").click(function(){
+	$(".dao_b").css("display","block");
+});
+$(".dk_a_a").click(function(){
+	$(".dao_b").css("display","none");
+});
+document.getElementById('shareBtn').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+document.getElementById('shareBtn2').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+</script>
+<script type="text/javascript" th:src="@{../js/soshm.min.js}"></script>
+
+<!-- conter -->
+<div class="ap_ca">
+    
+<!-- md-qiehuan -->
+<div class="ap_qie_m">
+<em onclick="self.location=document.referrer;"><img th:src="@{../images/app_return.png}" /></em>
+<ul>
+<li>门店查找</li>
+</ul>
+</div>
+<!-- md-qiehuan -->
+
+<!-- ap-md -->
+<div class="ap_mda">
+<div class="ap_mdaf">
+
+<!-- mdxx -->
+<div class="ap_mdb">
+<strong>释放心灵的空间</strong>
+<i><a></a></i>
+<p>盈然品牌从2014年开始起步，主做中高端女装，店面形象采用轻古典和时尚结合，主体以白色为主，金咖为辅，这样既便于突出货品的颜色，又使得店面比较明亮。每个店面配备购物区，休息区，展示区，收银区等，每个展示区域配备包，项链，丝巾作为辅助搭配。</p>
+</div>
+<!-- mdxx -->
+
+<!-- mdcz-1 -->
+<div class="ap_mdc"><img th:src="@{../images/app_md/mdzs_zt_2.png}" /></div>
+<!-- mdcz-1 -->
+<!-- mdcz-2 -->
+<div class="ap_mdd">
+<div id="procent">
+<select id="country" onchange="add1(this.value);">
+<option th:value="省份">省份</option>
+<option th:value="北京市">北京市</option>
+<option th:value="湖北省">湖北省</option>
+<option th:value="重庆市">重庆市</option>
+<option th:value="四川省">四川省</option>
+<option th:value="贵州省">贵州省</option>
+<option th:value="河北省">河北省</option>
+<option th:value="山东省">山东省</option>
+</select>
+</div>
+<div id="procent">
+<select id="city">
+<option th:value="商城">商城</option>
+</select>
+</div>
+<div id="anniu" onclick="bianhuan();"></div>
+</div>
+<!-- mdcz-2 -->
+
+<!-- 3 -->
+<div id="qiehuan">
+<div class="TT_slide_container">
+<ul class="TT_rslides" id="TT_slider">
+<li><img th:src="@{../images/md_img/y0r0s0.jpg}" /></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript" th:src="@{../js/qiehuan/responsiveslides.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/qiehuan/slide.js}"></script>
+<!-- 3 -->
+</div>
+</div>
+<!-- ap-md -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="ap_fa">
+<p>北京盛唐风韵商贸有限公司  版权所有</p>
+<p>京ICP备14060156号 京公网安备11010502026917</p>
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ap_ea">
+<i><a>微信公众号</a><a>"盈然"</a></i>
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

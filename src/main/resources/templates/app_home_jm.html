@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-加盟</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<script type="text/javascript" th:src="@{../js/home/apc-home.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-mendian.js}"></script>
+</head>
+<body>
+<!-- header -->
+<header class="ap_ha">
+<div class="dao_a">
+<div class="dl_at"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dl_b">
+<div class="dl_b_a"><img th:src="@{../images/app_dh_left.jpg}" /></div>
+<div class="dl_b_b" id="shareBtn"><img th:src="@{../images/app_dh_right.jpg}" /></div>
+</div>
+</div>
+<div class="dao_b" id="opis" style="display:none">
+<div class="dk_a">
+<div class="dk_b">
+<div class="dk_a_a"><img th:src="@{../images/app_close.jpg}" /></div>
+<div class="dk_a_b"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dk_a_c" id="shareBtn2"><img th:src="@{../images/app_link.jpg}" /></div>
+</div>
+<div class="dk_c">
+<ul>
+<li><a th:href="@{/}">首页</a></li>
+<li><a th:href="@{/gsjj}">我们</a></li>
+<li><a th:href="@{/ppgs}">品牌</a></li>
+<li><a th:href="@{/xxzx}">形象</a></li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li id="cle_line"><a th:href="@{/jmzx}">加盟</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<!-- header -->
+<script type="text/javascript">
+$(".dl_b_a").click(function(){
+	$(".dao_b").css("display","block");
+});
+$(".dk_a_a").click(function(){
+	$(".dao_b").css("display","none");
+});
+document.getElementById('shareBtn').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+document.getElementById('shareBtn2').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+</script>
+<script type="text/javascript" th:src="@{../js/soshm.min.js}"></script>
+
+<!-- conter -->
+<div class="ap_ca">
+    
+<!-- jm-qiehuan -->
+<div class="ap_qie_j">
+<em onclick="self.location=document.referrer;"><img th:src="@{../images/app_return.png}" /></em>
+<ul>
+<li>加盟</li>
+</ul>
+</div>
+<!-- jm-qiehuan -->
+
+<!-- ap-jm -->
+<div class="ap_jma">
+<div class="ap_jmaf">
+<!-- jmzc -->
+<div class="ap_jmb">
+<em><img th:src="@{../images/app_jm/jmyq_zt.jpg}" /></em>
+<em><img th:src="@{../images/app_jm/jmyq_lc.png}" /></em>
+</div>
+<!-- jmzc -->
+<!-- jmyq -->
+<div class="ap_jmc">
+<em><img th:src="@{../images/app_jm/jmyq_bt.jpg}" /></em>
+</div>
+<!-- jmyq -->
+<!-- jmsq -->
+<div class="ap_jmd">
+<form id="join_form" th:action="@{/upload/saveJoin}" th:method="post" th:object="${joinUs}">
+<div class="ap_input_all">
+<div id="ap_in_name"><input type="text" id="am_name" name="name" th:value="名称" onfocus="if(value=='名称'){value=''}" onblur="if(value==''){value='名称'}" /></div>
+<em><img th:src="@{../images/app_jm/jmyq_12.jpg}" /></em>
+</div>
+<div class="ap_input_all">
+<div id="ap_in_phone"><input type="text" id="am_phone" name="mobile" th:value="电话" onfocus="if(value=='电话'){value=''}" onblur="if(value==''){value='电话'}" /></div>
+<em><img th:src="@{../images/app_jm/jmyq_12.jpg}" /></em>
+</div>
+<div class="ap_input_all">
+<div id="ap_in_qq"><input type="text" id="am_qq" name="qq" th:value="QQ" onfocus="if(value=='QQ'){value=''}" onblur="if(value==''){value='QQ'}" /></div>
+</div>
+<div class="ap_input_all">
+<div id="ap_in_email"><input type="text" id="am_email" name="email" th:value="邮箱" onfocus="if(value=='邮箱'){value=''}" onblur="if(value==''){value='邮箱'}" /></div>
+</div>
+<div class="ap_input_all">
+<div id="ap_jm_procent"><select name="provinceName" id="country" onchange="add1(this.value);">
+<option th:value="省份">省份</option>
+<option th:value="北京市">北京市</option>
+<option th:value="湖北省">湖北省</option>
+<option th:value="重庆市">重庆市</option>
+<option th:value="四川省">四川省</option>
+<option th:value="贵州省">贵州省</option>
+<option th:value="河北省">河北省</option>
+<option th:value="山东省">山东省</option>
+</select></div>
+<div id="ap_jm_shop"><select name="shopName" id="city">
+<option th:value="商城">商城</option>
+</select></div>
+<em><img th:src="@{../images/app_jm/jmyq_13.jpg}" /></em>
+</div>
+<div class="ap_input_all">
+<div id="ap_in_adress"><input type="text" id="am_adress" name="adress" th:value="详细地址" onfocus="if(value=='详细地址'){value=''}" onblur="if(value==''){value='详细地址'}" /></div>
+</div>
+<div class="ap_input_all">
+<div id="ap_jm_kdjy"><select id="am_openStatus" name="openStatus">
+<option th:value="开店经验">开店经验</option>
+<option th:value="有">有</option>
+<option th:value="无">无</option>
+</select></div>
+<div id="ap_jm_ywdp"><select id="am_shopStatus" name="shopStatus">
+<option th:value="有无店铺">有无店铺</option>
+<option th:value="有">有</option>
+<option th:value="无">无</option>
+</select></div>
+</div>
+<div class="ap_input_all">
+<div id="ap_in_liuyan"><textarea id="am_message" name="message" onfocus="if(value=='留言'){value=''}" onblur="if(value==''){value='留言'}">留言</textarea></div>
+</div>
+<div class="ap_input_all">
+<div id="ap_in_tijiao" onclick='doSubmitJoin()'><img th:src="@{../images/app_jm/jmyq_11.jpg}" /></div>
+</div>
+</form>
+</div>
+<!-- jmsq -->
+<!-- jmdz -->
+<div class="ap_jmk">
+<dl>
+<dd>
+<b>加盟热线：</b>
+<em>18511599106</em>
+</dd>
+<dt>
+<b>公司地址：</b>
+<em>北京市大兴区天华大街绿地启航国际13号楼314室</em>
+</dt>
+</dl>
+</div>
+<!-- jmdz -->
+</div>
+</div>
+<!-- ap-jm -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="ap_fa">
+<p>北京盛唐风韵商贸有限公司  版权所有</p>
+<p>京ICP备14060156号 京公网安备11010502026917</p>
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ap_ea">
+<i><a>微信公众号</a><a>"盈然"</a></i>
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<script type="text/javascript" th:src="@{../js/home/apc-home.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-mendian.js}"></script>
+</head>
+<body>
+<!-- header -->
+<header class="ha_a" id="box">
+<div class="ha_a_a menu">
+<div class="dl_a">
+<em><img th:src="@{../images/home/logo.jpg}" /></em>
+</div>
+<div class="dl_b">
+<ul class="ha_b">
+<li><a th:href="@{/}">首页</a></li>
+<li class="li_3"><a th:href="@{/gsjj}">我们</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/gsjj}">公司简介</a></dd>
+<dd><a th:href="@{/qywh}">企业文化</a></dd>
+<dd class="lastItem"><a th:href="@{/fzlc}">发展历程</a></dd>
+</dl>
+</li>
+<li class="li_3"><a th:href="@{/ppgs}">品牌</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/ppgs}">品牌故事</a></dd>
+<dd><a th:href="@{/ppfg}">品牌风格</a></dd>
+<dd><a th:href="@{/ppln}">品牌理念</a></dd>
+<dd class="lastItem"><a th:href="@{/ppzx}">品牌资讯</a></dd>
+</dl>
+</li>
+</ul>
+<ul class="ha_d">
+<li class="li_3"><a th:href="@{/xxzx}">形象</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/cxxl}">2018春夏系列</a></dd>
+<dd><a th:href="@{/qdxl}">2018秋冬系列</a></dd>
+<dd class="lastItem"><a th:href="@{/xxzx}">形象VIDEO</a></dd>
+</dl>
+</li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li class="li_3"><a th:href="@{/jmzx}">加盟</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/jmzx}">加盟流程</a></dd>
+<dd class="lastItem"><a th:href="@{/jmzx}">加盟政策</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<!-- header -->
+
+<!-- conter -->
+<div class="ca_a">
+
+<!-- hb -->
+<div class="ga_a">
+<!-- 1 -->
+<div class="slide_container">
+<ul class="rslides" id="slider">
+<li><img th:src="@{../images/home/yrhb/hb_1.jpg}" /></li>
+<li><img th:src="@{../images/home/yrhb/hb_2.jpg}" /></li>
+<li><img th:src="@{../images/home/yrhb/hb_3.jpg}" /></li>
+<li><img th:src="@{../images/home/yrhb/hb_4.jpg}" /></li>
+</ul>
+</div>
+<!-- 1 -->
+</div>
+<!-- gg -->
+
+<!-- gyyr -->
+<div class="ya_a">
+<div class="ya_ag">
+<!-- 1 -->
+<div class="ya_b">
+<em><a></a></em>
+<p><a>轻中式领导者</a></p>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="ya_c">
+<div class="ya_c_a">
+<em><img th:src="@{../images/home/gywm/gywm_zt.jpg}" /></em>
+<div class="ya_c_g">
+<ul>
+<li class="kjy_a" id="Button11" onclick="TabMove(1,1,3)"><a>品牌故事</a></li>
+<li class="kjy" id="Button12" onclick="TabMove(1,2,3)"><a>品牌风格</a></li>
+<li class="kjy" id="Button13" onclick="TabMove(1,3,3)"><a>品牌理念</a></li>
+</ul>
+</div>
+</div>
+<div class="ya_c_b" id="ContentBox11">
+<em><img th:src="@{../images/home/gywm/ppgs/ppgs_1.jpg}" /></em>
+<i><img th:src="@{../images/home/gywm/ppgs/ppgs_2.jpg}" /></i>
+</div>
+<div class="ya_c_c" id="ContentBox12" style="display: none;">
+<!-- 1 -->
+<dl class="fanner">
+<dd class="imgInfo"><img th:src="@{../images/home/gywm/ppfg/ppfg_1.jpg}" /></dd>
+<dt class="textInfo">
+<b>30%轻中式</b>
+<strong><a th:href="@{/ppfg}" target="_blank">查看详情</a></strong>
+</dt>
+<div class="cornerTL"></div>
+<div class="cornerTR"></div>
+<div class="cornerBL"></div>
+<div class="cornerBR"></div>
+</dl>
+<!-- 1 -->
+<!-- 2 -->
+<dl class="fbnner">
+<dd class="imgInfo"><img th:src="@{../images/home/gywm/ppfg/ppfg_2.jpg}" /></dd>
+<dt class="textInfo">
+<b>30%轻商务</b>
+<strong><a th:href="@{/ppfg}" target="_blank">查看详情</a></strong>
+</dt>
+<div class="cornerTL"></div>
+<div class="cornerTR"></div>
+<div class="cornerBL"></div>
+<div class="cornerBR"></div>
+</dl>
+<!-- 2 -->
+<!-- 3 -->
+<dl class="fcnner">
+<dd class="imgInfo"><img th:src="@{../images/home/gywm/ppfg/ppfg_3.jpg}" /></dd>
+<dt class="textInfo">
+<b>30%轻休闲</b>
+<strong><a th:href="@{/ppfg}" target="_blank">查看详情</a></strong>
+</dt>
+<div class="cornerTL"></div>
+<div class="cornerTR"></div>
+<div class="cornerBL"></div>
+<div class="cornerBR"></div>
+</dl>
+<!-- 3 -->
+<!-- 4 -->
+<dl class="fdnner">
+<dd class="imgInfo"><img th:src="@{../images/home/gywm/ppfg/ppfg_4.jpg}" /></dd>
+<dt class="textInfo">
+<b>10%奢华礼服</b>
+<strong><a th:href="@{/ppfg}" target="_blank">查看详情</a></strong>
+</dt>
+<div class="cornerTL"></div>
+<div class="cornerTR"></div>
+<div class="cornerBL"></div>
+<div class="cornerBR"></div>
+</dl>
+<!-- 4 -->
+</div>
+<div class="ya_c_d" id="ContentBox13" style="display: none;">
+<em><img th:src="@{../images/home/gywm/ppln/ppln_1.jpg}" /></em>
+<i><img th:src="@{../images/home/gywm/ppln/ppln_2.jpg}" /></i>
+</div>
+</div>
+<!-- 2 -->
+<!-- 3 -->
+<div class="ya_z">
+<div class="ya_z_top"><i><img th:src="@{../images/home/gywm_zx/gywm_zx_zt.jpg}" /></i></div>
+<!-- start -->
+<div id="pc_aritkf">
+<!-- <div class="KK_slide_container">
+<ul class="KK_rslides" id="KK_slider">
+<li><div class="ya_z_cen">
+<dl>
+<dt><img src="images/home/gywm_zx/gywm_zx_hb_5.jpg" /></dt>
+<dd>
+<span>
+<p><a href="">以梦予光——MQD一脚一步藏区关爱儿...</a></p>
+<em>2018-02-05</em>
+<i><a href="">查看更多>></a></i>
+</span>
+</dd>
+</dl>
+</div></li>
+</ul>
+</div> -->
+</div>
+<!-- end -->
+</div>
+<!-- 3 -->
+</div>
+</div>
+<!-- gyyr -->
+
+<!-- xxzx -->
+<div class="xa_a">
+<div class="xa_a_a">
+<!-- 1 -->
+<div class="xa_b">
+<div class="xa_b_a">
+<p>AUTUMN AND WINTER</p>
+<dl class="banner">
+<dd class="imgInfo"><img th:src="@{../images/home/xxzx/xxzx_mk_1.jpg}" /></dd>
+<dt class="textInfo">
+<b>2018秋冬系列</b>
+<strong><a th:href="@{/qdxl}" target="_blank">查看更多</a></strong>
+</dt>
+<div class="cornerTL"></div>
+<div class="cornerTR"></div>
+<div class="cornerBL"></div>
+<div class="cornerBR"></div>
+</dl>
+</div>
+<div class="xa_b_b"><em><img th:src="@{../images/home/xxzx/xxzx_zt.png}" /></em></div>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="xa_c">
+<div class="xa_c_a">
+<p>盈然一直都是轻中式领导者<br />
+在传统东方美的基础上，引进欧美版型<br />
+结合中年女性的体型特征<br />
+在北京文化的底蕴下<br />
+延展新一代女性的轻中式美<br />
+2018年新款大力推陈出新<br />
+65%货品采用真丝，以绣花，串珠进行点缀<br />
+在盈然原有基础上增加产品品质感<br />
+绣花等立体元素，增加盈然美感和独有度</p>
+<em><a></a></em>
+</div>
+<div class="xa_c_b">
+<p>SPRING AND SUMMER SERIES</p>
+<dl class="manner">
+<dd class="imgInfo"><img th:src="@{../images/home/xxzx/xxzx_mk_2.jpg}" /></dd>
+<dt class="textInfo">
+<b>2018春夏系列</b>
+<strong><a th:href="@{/cxxl}" target="_blank">查看更多</a></strong>
+</dt>
+<div class="cornerTL"></div>
+<div class="cornerTR"></div>
+<div class="cornerBL"></div>
+<div class="cornerBR"></div>
+</dl>
+</div>
+</div>
+<!-- 2 -->
+</div>
+</div>
+<!-- xxzx -->
+
+<!-- mdzs -->
+<div class="ma_a">
+<div class="ma_a_a">
+<!-- 1 -->
+<div class="ma_b">
+<em><img th:src="@{../images/home/mdzs/mdzs_zt1.jpg}" /></em>
+<dl>
+<dd>
+<div id="procent">
+<select id="country" onchange="add1(this.value);">
+<option th:value="省份">省份</option>
+<option th:value="北京市">北京市</option>
+<option th:value="湖北省">湖北省</option>
+<option th:value="重庆市">重庆市</option>
+<option th:value="四川省">四川省</option>
+<option th:value="贵州省">贵州省</option>
+<option th:value="河北省">河北省</option>
+<option th:value="山东省">山东省</option>
+</select>
+</div>
+<div id="shop">
+<select id="city">
+<option th:value="商城">商城</option>
+</select>
+</div>
+</dd>
+<dt>
+<div id="anniu" onclick="bianhuan();"></div>
+</dt>
+</dl>
+<i><img th:src="@{../images/home/mdzs/mdzs_zt2.jpg}" /></i>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="ma_c">
+<div id="qiehuan">
+<div class="TT_slide_container">
+<ul class="TT_rslides" id="TT_slider">
+<li><img th:src="@{../images/md_img/y0r0s0.jpg}" /></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript" th:src="@{../js/qiehuan/responsiveslides.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/qiehuan/slide.js}"></script>
+</div>
+<!-- 2 -->
+</div>
+</div>
+<!-- mdzs -->
+
+<!-- lxwm -->
+<div class="la_a">
+<div class="la_a_a">
+<!-- 1 -->
+<div class="la_b">
+<form id="leave_form" th:action="@{/upload/saveLeave}" th:method="post" th:object="${leaveWord}">
+<dl class="la_b_a">
+<dd>
+<div id="inprint">
+<input type="text" id="jy_name" name="name" th:value="名称" onfocus="if(value=='名称'){value=''}" onblur="if(value==''){value='名称'}" />
+</div>
+<div id="outprint">
+<input type="text" id="jy_phone" name="mobile" th:value="电话" onfocus="if(value=='电话'){value=''}" onblur="if(value==''){value='电话'}" />
+</div>
+</dd>
+<dt><img th:src="@{../images/home/lxwm/lxwm_zt.png}" /></dt>
+</dl>
+<dl class="la_b_b">
+<dd>
+<textarea id="jy_message" name="message" onfocus="if(value=='留言'){value=''}" onblur="if(value==''){value='留言'}">留言</textarea>
+</dd>
+<dt onclick='doSubmitForm()'><img th:src="@{../images/home/lxwm/lxwm_tj.jpg}" /></dt>
+</dl>
+</form>
+</div>
+<!-- 1 -->
+
+<!-- 2 -->
+<div class="la_c">
+<dl>
+<dd>
+<b>加盟热线：</b>
+<em>18511599106</em>
+</dd>
+<dt>
+<b>公司地址：</b>
+<em>北京市大兴区天华大街绿地启航国际13号楼314室</em>
+</dt>
+</dl>
+</div>
+<!-- 2 -->
+</div>
+</div>
+<!-- lxwm -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="fa_a">
+<!-- 1 -->
+<div class="ea_a">
+<div class="ea_a_a">
+<!-- 1-1 -->
+<div class="ea_b">
+<em><img th:src="@{../images/foot_logo.png}" /></em>
+<dl>
+<dd class="ea_b_b">
+<strong><a th:href="@{/jmzx}">加盟</a></strong>
+<ul>
+<li><a th:href="@{/jmzx}">加盟流程</a></li>
+<li><a th:href="@{/jmzx}">加盟政策</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/mdzs}">门店</a></strong>
+<ul>
+
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/xxzx}">形象</a></strong>
+<ul>
+<li><a th:href="@{/cxxl}">2018春夏系列</a></li>
+<li><a th:href="@{/qdxl}">2018秋冬系列</a></li>
+<li><a th:href="@{/xxzx}">形象VIDEO</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/ppgs}">品牌</a></strong>
+<ul>
+<li><a th:href="@{/ppgs}">品牌故事</a></li>
+<li><a th:href="@{/ppfg}">品牌风格</a></li>
+<li><a th:href="@{/ppln}">品牌理念</a></li>
+<li><a th:href="@{/ppzx}">品牌资讯</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/gsjj}">我们</a></strong>
+<ul>
+<li><a th:href="@{/gsjj}">公司简介</a></li>
+<li><a th:href="@{/qywh}">企业文化</a></li>
+<li><a th:href="@{/fzlc}">发展历程</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/}">首页</a></strong>
+<ul>
+
+</ul>
+</dd>
+</dl>
+</div>
+<!-- 1-1 -->
+</div>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="ea_c">
+<div class="ea_c_c">
+<p>北京盛唐风韵商贸有限公司  版权所有 京ICP备14060156号 京公网安备11010502026917</p>
+<span>
+<i>
+<a class="button_weibo" onclick="shareToSinaWB(event)"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="button_qq" onclick="shareToQzone(event)"></a>
+</i>
+<em>点击分享</em>
+<script type="text/javascript" th:src="@{http://v3.jiathis.com/code/jia.js?uid=1}" charset="utf-8"></script>
+</span>
+</div>
+</div>
+<!-- 2 -->
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ea_m">
+<div class="tophb">
+<dl class="tophb_a">
+<em><img th:src="@{../images/weixin_gz.jpg}" /></em>
+<i>盈然-微信公众号</i>
+</dl>
+<dl class="tophb_a">
+<em><img th:src="@{../images/kefu_gz.jpg}" /></em>
+<i>盈然-客服公众号</i>
+</dl>
+</div>
+<div class="ea_m_a">
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+</div>
+<!-- rollback top -->
+
+<script type="text/javascript">
+window.onload=pcdojz;
+</script>
+
+</body>
+</html>

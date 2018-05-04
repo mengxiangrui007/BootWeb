@@ -1,0 +1,63 @@
+# server
+server: 
+  port: 8383
+  #context-path: /BootWeb
+# mybatis
+mybatis: 
+  mapper-locations: classpath:cn/htjx/mapper/*.xml
+spring: 
+  datasource: #数据
+    name: yingran
+    url: jdbc:mysql://127.0.0.1:3306/yingran?characterEncoding=utf-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  thymeleaf: #thymeleaf
+    cache: false
+    check-template-location: true
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html
+    prefix: classpath:/templates/
+    suffix: .html
+  jpa: #持久化
+    database: MYSQL
+    show-sql: true
+    hibernate: 
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties: 
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  mvc: 
+    static-path-pattern: /**
+  resources: 
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+multipart: #上传
+  maxFileSize: 10Mb
+  maxRequestSize: 100Mb
+web: #上传目录
+  upload-path: /home/YingRanInfo/
+
+# upload
+#web.upload-path=F:/resource/  
+#server.context-path=/${web.upload-path} D:\YingRanInfo\   /home/YingRanInfo/
+#spring.mvc.static-path-pattern=/**  
+#spring.resources.static-locations=classpath:/META-INF/resources/,classpath:/resources/,\  
+#classpath=/static/,classpath:/public/,file:${web.upload-path}
+
+

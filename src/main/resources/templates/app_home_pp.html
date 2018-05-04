@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-品牌</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<style type="text/css">
+.ap_qie_p{ width: 100%; float:left; border-top: 1px #cecece solid; border-bottom: 1px #cecece solid;}
+.ap_qie_p em{ width: 11%; float:left; cursor: pointer;}
+.ap_qie_p em img{ width: 100%; height: 100%; float: left;}
+.ap_qie_p ul{ width: 89%; float: left;}
+.ap_qie_p ul .kjy{ width: 24.6%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center; font-size:13px; cursor: pointer;}
+.ap_qie_p ul .kjy_a{ width: 24.6%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center; font-size:13px; cursor: pointer; background: #c65c21; color: #ffffff;}
+</style>
+</head>
+<body>
+<!-- header -->
+<header class="ap_ha">
+<div class="dao_a">
+<div class="dl_at"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dl_b">
+<div class="dl_b_a"><img th:src="@{../images/app_dh_left.jpg}" /></div>
+<div class="dl_b_b" id="shareBtn"><img th:src="@{../images/app_dh_right.jpg}" /></div>
+</div>
+</div>
+<div class="dao_b" id="opis" style="display:none">
+<div class="dk_a">
+<div class="dk_b">
+<div class="dk_a_a"><img th:src="@{../images/app_close.jpg}" /></div>
+<div class="dk_a_b"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dk_a_c" id="shareBtn2"><img th:src="@{../images/app_link.jpg}" /></div>
+</div>
+<div class="dk_c">
+<ul>
+<li><a th:href="@{/}">首页</a></li>
+<li><a th:href="@{/gsjj}">我们</a></li>
+<li><a th:href="@{/ppgs}">品牌</a></li>
+<li><a th:href="@{/xxzx}">形象</a></li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li id="cle_line"><a th:href="@{/jmzx}">加盟</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<!-- header -->
+<script type="text/javascript">
+$(".dl_b_a").click(function(){
+	$(".dao_b").css("display","block");
+});
+$(".dk_a_a").click(function(){
+	$(".dao_b").css("display","none");
+});
+document.getElementById('shareBtn').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+document.getElementById('shareBtn2').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+</script>
+<script type="text/javascript" th:src="@{../js/soshm.min.js}"></script>
+
+<!-- conter -->
+<div class="ap_ca">
+
+<!-- pp-qiehuan -->
+<div class="ap_qie_p">
+<em onclick="self.location=document.referrer;"><img th:src="@{../images/app_return.png}" /></em>
+<ul th:if="${status==1}">
+<li class="kjy_a" id="Button71" onclick="TabMove(7,1,4)">品牌故事</li>
+<li class="kjy" id="Button72" onclick="TabMove(7,2,4)">品牌风格</li>
+<li class="kjy" id="Button73" onclick="TabMove(7,3,4)">品牌理念</li>
+<li class="kjy" id="Button74" onclick="TabMove(7,4,4)">品牌资讯</li>
+</ul>
+<ul th:if="${status==2}">
+<li class="kjy" id="Button71" onclick="TabMove(7,1,4)">品牌故事</li>
+<li class="kjy_a" id="Button72" onclick="TabMove(7,2,4)">品牌风格</li>
+<li class="kjy" id="Button73" onclick="TabMove(7,3,4)">品牌理念</li>
+<li class="kjy" id="Button74" onclick="TabMove(7,4,4)">品牌资讯</li>
+</ul>
+<ul th:if="${status==3}">
+<li class="kjy" id="Button71" onclick="TabMove(7,1,4)">品牌故事</li>
+<li class="kjy" id="Button72" onclick="TabMove(7,2,4)">品牌风格</li>
+<li class="kjy_a" id="Button73" onclick="TabMove(7,3,4)">品牌理念</li>
+<li class="kjy" id="Button74" onclick="TabMove(7,4,4)">品牌资讯</li>
+</ul>
+<ul th:if="${status==4}">
+<li class="kjy" id="Button71" onclick="TabMove(7,1,4)">品牌故事</li>
+<li class="kjy" id="Button72" onclick="TabMove(7,2,4)">品牌风格</li>
+<li class="kjy" id="Button73" onclick="TabMove(7,3,4)">品牌理念</li>
+<li class="kjy_a" id="Button74" onclick="TabMove(7,4,4)">品牌资讯</li>
+</ul>
+</div>
+<!-- pp-qiehuan -->
+
+<!-- ap-pp -->
+<div class="ap_ppa">
+<div class="ap_ppaf">
+<!-- ppgs -->
+<div class="ap_ppb" id="ContentBox71" th:style="${change1}">
+<em><img th:src="@{../images/app_pp/ppgs/ppgs_1.jpg}" /></em>
+<em><img th:src="@{../images/app_pp/ppgs/ppgs_2.png}" /></em>
+</div>
+<!-- ppgs -->
+<!-- ppfg -->
+<div class="ap_ppc" id="ContentBox72" th:style="${change2}">
+<div class="ap_ppc_a">
+<em><img th:src="@{../images/app_pp/ppfg/ppfg_1.png}" /></em>
+<em><img th:src="@{../images/app_pp/ppfg/ppfg_2.png}" /></em>
+</div>
+<div class="ap_ppc_b">
+<em><img th:src="@{../images/app_pp/ppfg/ppfg_3.png}" /></em>
+<em><img th:src="@{../images/app_pp/ppfg/ppfg_4.png}" /></em>
+</div>
+</div>
+<!-- ppfg -->
+<!-- ppln -->
+<div class="ap_ppd" id="ContentBox73" th:style="${change3}">
+<em><img th:src="@{../images/app_pp/ppln/ppln_1.png}" /></em>
+</div>
+<!-- ppln -->
+<!-- ppzx -->
+<div class="ap_ppe" id="ContentBox74" th:style="${change4}">
+<em><img th:src="@{../images/app_pp/ppzx/ppzx_bt.png}" /></em>
+<dl th:each="articlePub,iterStat : ${articlePubs}">
+<dt><img th:src="${articlePub.newImgUrl}" /></dt>
+<dd>
+<p><a th:href="${articlePub.titleUrl}" th:text="${articlePub.titleName}"></a></p>
+<span>
+<b th:text="${articlePub.uTime}"></b>
+<i><a th:href="${articlePub.titleUrl}">查看详情>></a></i>
+</span>
+</dd>
+</dl>
+<!-- <dl>
+<dt><img src="images/app_pp/ppzx/ppzx_2.jpg" /></dt>
+<dd>
+<p><a href="/pzxxq">盈然，春暖花开时分，用行动祝您女王节快乐！</a></p>
+<span>
+<b>2018-02-03</b>
+<i><a href="/pzxxq">查看详情>></a></i>
+</span>
+</dd>
+</dl> -->
+<strong><a th:href="${apFy}">查看更多</a></strong>
+</div>
+<!-- ppzx -->
+
+</div>
+</div>
+<!-- ap-pp -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="ap_fa">
+<p>北京盛唐风韵商贸有限公司  版权所有</p>
+<p>京ICP备14060156号 京公网安备11010502026917</p>
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ap_ea">
+<i><a>微信公众号</a><a>"盈然"</a></i>
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

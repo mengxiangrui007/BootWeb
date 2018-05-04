@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然管理平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<style type="text/css">
+#manage_a{ width: 90%; float:left; margin:2% 0 0 10%; display:block;}
+#manage_a a{ float:left; padding:2% 5%; margin:1% 1%; display:block; color:#FE7700; border:2px #FE7700 solid; font-size:1.5rem; font-weight:bold;}
+</style>
+</head>
+<body>
+<div id="manage_a">
+<a th:href="@{/upload/outWordSix}">导出最新60条留言板（建议）</a>
+<a th:href="@{/upload/outJoinSix}">导出最新60条加盟申请（建议）</a>
+<a th:href="@{/newTrends}">发布新动态</a>
+<a th:href="@{/upload/outWord}">导出全部留言板</a>
+<a th:href="@{/upload/outJoin}">导出全部加盟申请</a>
+</div>
+</body>
+</html>

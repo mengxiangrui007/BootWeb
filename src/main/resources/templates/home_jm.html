@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-加盟</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<script type="text/javascript" th:src="@{../js/home/apc-home.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-mendian.js}"></script>
+</head>
+<body>
+<!-- header -->
+<header class="ha_a" id="box">
+<div class="ha_a_a menu">
+<div class="dl_a">
+<em><img th:src="@{../images/home/logo.jpg}" /></em>
+</div>
+<div class="dl_b">
+<ul class="ha_b">
+<li><a th:href="@{/}">首页</a></li>
+<li class="li_3"><a th:href="@{/gsjj}">我们</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/gsjj}">公司简介</a></dd>
+<dd><a th:href="@{/qywh}">企业文化</a></dd>
+<dd class="lastItem"><a th:href="@{/fzlc}">发展历程</a></dd>
+</dl>
+</li>
+<li class="li_3"><a th:href="@{/ppgs}">品牌</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/ppgs}">品牌故事</a></dd>
+<dd><a th:href="@{/ppfg}">品牌风格</a></dd>
+<dd><a th:href="@{/ppln}">品牌理念</a></dd>
+<dd class="lastItem"><a th:href="@{/ppzx}">品牌资讯</a></dd>
+</dl>
+</li>
+</ul>
+<ul class="ha_d">
+<li class="li_3"><a th:href="@{/xxzx}">形象</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/cxxl}">2018春夏系列</a></dd>
+<dd><a th:href="@{/qdxl}">2018秋冬系列</a></dd>
+<dd class="lastItem"><a th:href="@{/xxzx}">形象VIDEO</a></dd>
+</dl>
+</li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li class="li_3"><a th:href="@{/jmzx}">加盟</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/jmzx}">加盟流程</a></dd>
+<dd class="lastItem"><a th:href="@{/jmzx}">加盟政策</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<!-- header -->
+
+<!-- conter -->
+<div class="ca_a">
+
+<!-- hbt -->
+<div class="pos_a">
+<div class="pos_a_a"><img th:src="@{../images/jm/show_jmyq.jpg}" /></div>
+</div>
+<!-- hbt -->
+
+<!-- jm-content -->
+<div class="zjm_a">
+
+<!-- jm-jmlc -->
+<div class="zjm_b">
+<div class="zjm_b_a"><img th:src="@{../images/jm/jmyq_zt.jpg}" /></div>
+</div>
+<!-- jm-jmlc -->
+
+<!-- jmyq -->
+<div class="jm_a">
+<div class="jm_a_a">
+<!-- 1 -->
+<div class="jm_z">
+<strong>加盟要求</strong>
+<p>如果您对“盈然”女装品牌感兴趣，并希望获取我们更多加盟资料，请在以下留言框中填写您的信息，以方便我们工作人员与您取得联系！</p>
+</div>
+<!-- 1 -->
+<!-- 1 -->
+<div class="jm_b">
+<form id="join_form" th:action="@{/upload/saveJoin}" th:method="post" th:object="${joinUs}">
+<dl class="jm_b_a">
+<dd>
+<div class="input_all">
+<div id="in_name"><input type="text" id="am_name" name="name" th:value="名称" onfocus="if(value=='名称'){value=''}" onblur="if(value==''){value='名称'}" /></div>
+<em><img th:src="@{../images/jm/jmyq_12.png}" /></em>
+</div>
+<div class="input_all">
+<div id="in_phone"><input type="text" id="am_phone" name="mobile" th:value="电话" onfocus="if(value=='电话'){value=''}" onblur="if(value==''){value='电话'}" /></div>
+<em><img th:src="@{../images/jm/jmyq_12.png}" /></em>
+</div>
+<div class="input_all">
+<div id="in_qq"><input type="text" id="am_qq" name="qq" th:value="QQ" onfocus="if(value=='QQ'){value=''}" onblur="if(value==''){value='QQ'}" /></div>
+</div>
+<div class="input_all">
+<div id="in_email"><input type="text" id="am_email" name="email" th:value="邮箱" onfocus="if(value=='邮箱'){value=''}" onblur="if(value==''){value='邮箱'}" /></div>
+</div>
+<div class="input_all">
+<div id="jm_procent"><select name="provinceName" id="country" onchange="add1(this.value);">
+<option th:value="省份">省份</option>
+<option th:value="北京市">北京市</option>
+<option th:value="湖北省">湖北省</option>
+<option th:value="重庆市">重庆市</option>
+<option th:value="四川省">四川省</option>
+<option th:value="贵州省">贵州省</option>
+<option th:value="河北省">河北省</option>
+<option th:value="山东省">山东省</option>
+</select></div>
+<div id="jm_shop"><select name="shopName" id="city">
+<option th:value="商城">商城</option>
+</select></div>
+<em><img th:src="@{../images/jm/jmyq_13.png}" /></em>
+</div>
+<div class="input_all">
+<div id="in_adress"><input type="text" id="am_adress" name="adress" th:value="详细地址" onfocus="if(value=='详细地址'){value=''}" onblur="if(value==''){value='详细地址'}" /></div>
+</div>
+<div class="input_all">
+<div id="jm_kdjy"><select id="am_openStatus" name="openStatus">
+<option th:value="开店经验">开店经验</option>
+<option th:value="有">有</option>
+<option th:value="无">无</option>
+</select></div>
+<div id="jm_ywdp"><select id="am_shopStatus" name="shopStatus">
+<option th:value="有无店铺">有无店铺</option>
+<option th:value="有">有</option>
+<option th:value="无">无</option>
+</select></div>
+</div>
+</dd>
+</dl>
+<dl class="jm_b_b">
+<dd>
+<textarea id="am_message" name="message" onfocus="if(value=='留言'){value=''}" onblur="if(value==''){value='留言'}">留言</textarea>
+</dd>
+<dt onclick='doSubmitJoin()'><img th:src="@{../images/home/lxwm/lxwm_tj.jpg}" /></dt>
+</dl>
+</form>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="jm_c">
+<dl>
+<dd>
+<b>加盟热线：</b>
+<em>18511599106</em>
+</dd>
+<dt>
+<b>公司地址：</b>
+<em>北京市大兴区天华大街绿地启航国际13号楼314室</em>
+</dt>
+</dl>
+</div>
+<!-- 2 -->
+</div>
+</div>
+<!-- jmyq -->
+
+</div>
+<!-- jm-content -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="fa_a">
+<!-- 1 -->
+<div class="ea_a">
+<div class="ea_a_a">
+<!-- 1-1 -->
+<div class="ea_b">
+<em><img th:src="@{../images/foot_logo.png}" /></em>
+<dl>
+<dd class="ea_b_b">
+<strong><a th:href="@{/jmzx}">加盟</a></strong>
+<ul>
+<li><a th:href="@{/jmzx}">加盟流程</a></li>
+<li><a th:href="@{/jmzx}">加盟政策</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/mdzs}">门店</a></strong>
+<ul>
+
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/xxzx}">形象</a></strong>
+<ul>
+<li><a th:href="@{/cxxl}">2018春夏系列</a></li>
+<li><a th:href="@{/qdxl}">2018秋冬系列</a></li>
+<li><a th:href="@{/xxzx}">形象VIDEO</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/ppgs}">品牌</a></strong>
+<ul>
+<li><a th:href="@{/ppgs}">品牌故事</a></li>
+<li><a th:href="@{/ppfg}">品牌风格</a></li>
+<li><a th:href="@{/ppln}">品牌理念</a></li>
+<li><a th:href="@{/ppzx}">品牌资讯</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/gsjj}">我们</a></strong>
+<ul>
+<li><a th:href="@{/gsjj}">公司简介</a></li>
+<li><a th:href="@{/qywh}">企业文化</a></li>
+<li><a th:href="@{/fzlc}">发展历程</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/}">首页</a></strong>
+<ul>
+
+</ul>
+</dd>
+</dl>
+</div>
+<!-- 1-1 -->
+</div>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="ea_c">
+<div class="ea_c_c">
+<p>北京盛唐风韵商贸有限公司  版权所有 京ICP备14060156号 京公网安备11010502026917</p>
+<span>
+<i>
+<a class="button_weibo" onclick="shareToSinaWB(event)"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="button_qq" onclick="shareToQzone(event)"></a>
+</i>
+<em>点击分享</em>
+<script type="text/javascript" th:src="@{http://v3.jiathis.com/code/jia.js?uid=1}" charset="utf-8"></script>
+</span>
+</div>
+</div>
+<!-- 2 -->
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ea_m">
+<div class="tophb">
+<dl class="tophb_a">
+<em><img th:src="@{../images/weixin_gz.jpg}" /></em>
+<i>盈然-微信公众号</i>
+</dl>
+<dl class="tophb_a">
+<em><img th:src="@{../images/kefu_gz.jpg}" /></em>
+<i>盈然-客服公众号</i>
+</dl>
+</div>
+<div class="ea_m_a">
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

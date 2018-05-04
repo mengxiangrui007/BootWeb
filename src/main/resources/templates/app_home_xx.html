@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-形象</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/app_sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<link rel="stylesheet" type="text/css" th:href="@{../css/video-js.min.css}" />
+</head>
+<body>
+<!-- header -->
+<header class="ap_ha">
+<div class="dao_a">
+<div class="dl_at"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dl_b">
+<div class="dl_b_a"><img th:src="@{../images/app_dh_left.jpg}" /></div>
+<div class="dl_b_b" id="shareBtn"><img th:src="@{../images/app_dh_right.jpg}" /></div>
+</div>
+</div>
+<div class="dao_b" id="opis" style="display:none">
+<div class="dk_a">
+<div class="dk_b">
+<div class="dk_a_a"><img th:src="@{../images/app_close.jpg}" /></div>
+<div class="dk_a_b"><img th:src="@{../images/home/app_logo.jpg}" /></div>
+<div class="dk_a_c" id="shareBtn2"><img th:src="@{../images/app_link.jpg}" /></div>
+</div>
+<div class="dk_c">
+<ul>
+<li><a th:href="@{/}">首页</a></li>
+<li><a th:href="@{/gsjj}">我们</a></li>
+<li><a th:href="@{/ppgs}">品牌</a></li>
+<li><a th:href="@{/xxzx}">形象</a></li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li id="cle_line"><a th:href="@{/jmzx}">加盟</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<!-- header -->
+<script type="text/javascript">
+$(".dl_b_a").click(function(){
+	$(".dao_b").css("display","block");
+});
+$(".dk_a_a").click(function(){
+	$(".dao_b").css("display","none");
+});
+document.getElementById('shareBtn').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+document.getElementById('shareBtn2').addEventListener('click', function() {
+soshm.popIn({
+title: '盈然 - 让魅力再加分',
+sites: ['weibo', 'qzone', 'qq']
+});
+}, false);
+</script>
+<script type="text/javascript" th:src="@{../js/soshm.min.js}"></script>
+
+<!-- conter -->
+<div class="ap_ca">
+    
+<!-- xx-qiehuan -->
+<div class="ap_qie_x">
+<em onclick="self.location=document.referrer;"><img th:src="@{../images/app_return.png}" /></em>
+<ul>
+<li>品牌形象</li>
+</ul>
+</div>
+<!-- xx-qiehuan -->
+
+<!-- ap-xx -->
+<div class="ap_xxa">
+<!-- xx1 -->
+<div class="ap_xxa_a">
+<em><img th:src="@{../images/app_xx/xx_xxzx_hb_1.png}" /></em>
+<i><a th:href="@{/cxxl}"></a></i>
+</div>
+<!-- xx1 -->
+<!-- xx2 -->
+<div class="ap_xxa_b">
+<em><img th:src="@{../images/app_xx/xx_xxzx_hb_2.png}" /></em>
+<i><a th:href="@{/qdxl}"></a></i>
+</div>
+<!-- xx2 -->
+<!-- xx3 -->
+<div class="ap_xxa_c">
+<!-- <em><img th:src="@{../images/app_xx/xx_xxzx_sp_1.png}" /></em> -->
+<em>
+<video id="my-video" class="video-js" controls preload="auto" width="320"
+ poster="images/app_xx/xx_xxzx_sp_1.png" data-setup="{}">
+<source th:src="@{../video/yingranSP.mp4}" type="video/mp4">
+</video>
+</em>
+<script type="text/javascript" th:src="@{../js/video.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/video-js.swf}"></script>
+<script type="text/javascript" th:src="@{../js/videojs-ie8.min.js}"></script>
+<script type="text/javascript">
+var myPlayer = videojs('my-video');
+videojs("my-video").ready(function(){
+	var myPlayer = this;
+	myPlayer.play();
+});
+</script>
+<i><a></a></i>
+</div>
+<!-- xx3 -->
+</div>
+<!-- ap-xx -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="ap_fa">
+<p>北京盛唐风韵商贸有限公司  版权所有</p>
+<p>京ICP备14060156号 京公网安备11010502026917</p>
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ap_ea">
+<i><a>微信公众号</a><a>"盈然"</a></i>
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

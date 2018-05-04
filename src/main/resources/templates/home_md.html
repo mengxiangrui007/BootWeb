@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然-门店</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<link rel="stylesheet" type="text/css" media="screen" th:href="@{../css/common.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/common_menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{../css/sub_home.css}" />
+<script type="text/javascript" th:src="@{../js/html5.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-common.js}"></script>
+<script type="text/javascript" th:src="@{../js/jquery-mendian.js}"></script>
+</head>
+<body>
+<!-- header -->
+<header class="ha_a" id="box">
+<div class="ha_a_a menu">
+<div class="dl_a">
+<em><img th:src="@{../images/home/logo.jpg}" /></em>
+</div>
+<div class="dl_b">
+<ul class="ha_b">
+<li><a th:href="@{/}">首页</a></li>
+<li class="li_3"><a th:href="@{/gsjj}">我们</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/gsjj}">公司简介</a></dd>
+<dd><a th:href="@{/qywh}">企业文化</a></dd>
+<dd class="lastItem"><a th:href="@{/fzlc}">发展历程</a></dd>
+</dl>
+</li>
+<li class="li_3"><a th:href="@{/ppgs}">品牌</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/ppgs}">品牌故事</a></dd>
+<dd><a th:href="@{/ppfg}">品牌风格</a></dd>
+<dd><a th:href="@{/ppln}">品牌理念</a></dd>
+<dd class="lastItem"><a th:href="@{/ppzx}">品牌资讯</a></dd>
+</dl>
+</li>
+</ul>
+<ul class="ha_d">
+<li class="li_3"><a th:href="@{/xxzx}">形象</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/cxxl}">2018春夏系列</a></dd>
+<dd><a th:href="@{/qdxl}">2018秋冬系列</a></dd>
+<dd class="lastItem"><a th:href="@{/xxzx}">形象VIDEO</a></dd>
+</dl>
+</li>
+<li><a th:href="@{/mdzs}">门店</a></li>
+<li class="li_3"><a th:href="@{/jmzx}">加盟</a>
+<dl class="li_3_content">
+<dt><i></i></dt>
+<dd class="firstItem"><a th:href="@{/jmzx}">加盟流程</a></dd>
+<dd class="lastItem"><a th:href="@{/jmzx}">加盟政策</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<!-- header -->
+
+<!-- conter -->
+<div class="ca_a">
+
+<!-- hbt -->
+<div class="pos_a">
+<div class="pos_a_a"><img th:src="@{../images/md/show_mdzs.jpg}" /></div>
+</div>
+<!-- hbt -->
+
+<!-- wm-content -->
+<div class="zmd_a">
+
+<!-- mdcz -->
+<div class="mz_a">
+<div class="mz_a_a">
+<!-- 1 -->
+<div class="mz_h">
+<div class="mz_h_a">
+<span>
+<strong>释放心灵的空间</strong>
+<p>盈然品牌从2014年开始起步，主做中高端女装，店面形象采用轻古典和时尚结合，主体以白色为主，金咖为辅，这样既便于突出货品的颜色，又使得店面比较明亮。每个店面配备购物区，休息区，展示区，收银区等，每个展示区域配备包，项链，丝巾作为辅助搭配。</p>
+</span>
+</div>
+<div class="mz_h_b">
+<b>门店查找</b>
+<dl>
+<dd>
+<div id="mz_procent">
+<select id="country" onchange="add1(this.value);">
+<option th:value="省份">省份</option>
+<option th:value="北京市">北京市</option>
+<option th:value="湖北省">湖北省</option>
+<option th:value="重庆市">重庆市</option>
+<option th:value="四川省">四川省</option>
+<option th:value="贵州省">贵州省</option>
+<option th:value="河北省">河北省</option>
+<option th:value="山东省">山东省</option>
+</select>
+</div>
+<div id="mz_shop">
+<select id="city">
+<option th:value="商城">商城</option>
+</select>
+</div>
+</dd>
+<dt>
+<div id="mz_anniu" onclick="bianhuan();"></div>
+</dt>
+</dl>
+<em><img th:src="@{../images/md/mdzs_zt_2.jpg}" /></em>
+</div>
+</div>
+<!-- 1 -->
+</div>
+<div class="mz_b_b">
+<!-- 2 -->
+<div class="mz_c">
+<div id="qiehuan">
+<div class="TT_slide_container">
+<ul class="TT_rslides" id="TT_slider">
+<li><img th:src="@{../images/md_img/y0r0s0.jpg}" /></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript" th:src="@{../js/qiehuan/responsiveslides.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/qiehuan/slide.js}"></script>
+</div>
+<!-- 2 -->
+</div>
+</div>
+<!-- mdzs -->
+
+</div>
+<!-- wm-content -->
+
+</div>
+<!-- conter -->
+
+<!-- footer -->
+<footer class="fa_a">
+<!-- 1 -->
+<div class="ea_a">
+<div class="ea_a_a">
+<!-- 1-1 -->
+<div class="ea_b">
+<em><img th:src="@{../images/foot_logo.png}" /></em>
+<dl>
+<dd class="ea_b_b">
+<strong><a th:href="@{/jmzx}">加盟</a></strong>
+<ul>
+<li><a th:href="@{/jmzx}">加盟流程</a></li>
+<li><a th:href="@{/jmzx}">加盟政策</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/mdzs}">门店</a></strong>
+<ul>
+
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/xxzx}">形象</a></strong>
+<ul>
+<li><a th:href="@{/cxxl}">2018春夏系列</a></li>
+<li><a th:href="@{/qdxl}">2018秋冬系列</a></li>
+<li><a th:href="@{/xxzx}">形象VIDEO</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/ppgs}">品牌</a></strong>
+<ul>
+<li><a th:href="@{/ppgs}">品牌故事</a></li>
+<li><a th:href="@{/ppfg}">品牌风格</a></li>
+<li><a th:href="@{/ppln}">品牌理念</a></li>
+<li><a th:href="@{/ppzx}">品牌资讯</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/gsjj}">我们</a></strong>
+<ul>
+<li><a th:href="@{/gsjj}">公司简介</a></li>
+<li><a th:href="@{/qywh}">企业文化</a></li>
+<li><a th:href="@{/fzlc}">发展历程</a></li>
+</ul>
+</dd>
+<dd class="ea_b_b">
+<strong><a th:href="@{/}">首页</a></strong>
+<ul>
+
+</ul>
+</dd>
+</dl>
+</div>
+<!-- 1-1 -->
+</div>
+</div>
+<!-- 1 -->
+<!-- 2 -->
+<div class="ea_c">
+<div class="ea_c_c">
+<p>北京盛唐风韵商贸有限公司  版权所有 京ICP备14060156号 京公网安备11010502026917</p>
+<span>
+<i>
+<a class="button_weibo" onclick="shareToSinaWB(event)"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="button_qq" onclick="shareToQzone(event)"></a>
+</i>
+<em>点击分享</em>
+<script type="text/javascript" th:src="@{http://v3.jiathis.com/code/jia.js?uid=1}" charset="utf-8"></script>
+</span>
+</div>
+</div>
+<!-- 2 -->
+</footer>
+<!-- footer -->
+
+<!-- rollback top -->
+<div class="ea_m">
+<div class="tophb">
+<dl class="tophb_a">
+<em><img th:src="@{../images/weixin_gz.jpg}" /></em>
+<i>盈然-微信公众号</i>
+</dl>
+<dl class="tophb_a">
+<em><img th:src="@{../images/kefu_gz.jpg}" /></em>
+<i>盈然-客服公众号</i>
+</dl>
+</div>
+<div class="ea_m_a">
+<em  id="back-to-top"><img th:src="@{../images/back_top.png}" /></em>
+</div>
+</div>
+<!-- rollback top -->
+
+</body>
+</html>

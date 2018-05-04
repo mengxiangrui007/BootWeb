@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.htjx.dao.IJoinUsDao" >
+  
+  <resultMap id="JoinUsMapper" type="cn.htjx.domain.JoinUs" >
+	<id property="id" column="id" />
+	<result property="name" column="name" />
+	<result property="mobile" column="mobile" />
+	<result property="qq" column="qq" />
+	<result property="email" column="email" />
+	<result property="provinceName" column="province_name" />
+	<result property="shopName" column="shop_name" />
+	<result property="adress" column="adress" />
+	<result property="openStatus" column="open_status" />
+	<result property="shopStatus" column="shop_status" />
+	<result property="message" column="message" />
+	<result property="createTime" column="create_time" />
+	<result property="updateTime" column="update_time" />
+  </resultMap>
+  
+  <sql id="selectUserSql">
+	select id,name,mobile,qq,email,province_name,shop_name,adress,open_status,shop_status,message,create_time,update_time from yr_join_us
+  </sql>
+  
+  <sql id="insertUserKey">
+	<trim suffixOverrides=",">
+		<if test='null != name and name != ""'>
+			name,
+		</if>
+		<if test='null != mobile and mobile != ""'>
+			mobile,
+		</if>
+		<if test='null != qq and qq != ""'>
+			qq,
+		</if>
+		<if test='null != email and email != ""'>
+			email,
+		</if>
+		<if test='null != provinceName and provinceName != ""'>
+			province_name,
+		</if>
+		<if test='null != shopName and shopName != ""'>
+			shop_name,
+		</if>
+		<if test='null != adress and adress != ""'>
+			adress,
+		</if>
+		<if test='null != openStatus and openStatus != ""'>
+			open_status,
+		</if>
+		<if test='null != shopStatus and shopStatus != ""'>
+			shop_status,
+		</if>
+		<if test='null != message and message != ""'>
+			message,
+		</if>
+		<if test="null != createTime">
+			create_time,
+		</if>
+		<if test="null != updateTime">
+			update_time
+		</if>
+	</trim>
+  </sql>
+  <sql id="insertUserValue">
+	<trim suffixOverrides=",">
+		<if test='null != name and name != ""'>
+			#{name},
+		</if>
+		<if test='null != mobile and mobile != ""'>
+			#{mobile},
+		</if>
+		<if test='null != qq and qq != ""'>
+			#{qq},
+		</if>
+		<if test='null != email and email != ""'>
+			#{email},
+		</if>
+		<if test='null != provinceName and provinceName != ""'>
+			#{provinceName},
+		</if>
+		<if test='null != shopName and shopName != ""'>
+			#{shopName},
+		</if>
+		<if test='null != adress and adress != ""'>
+			#{adress},
+		</if>
+		<if test='null != openStatus and openStatus != ""'>
+			#{openStatus},
+		</if>
+		<if test='null != shopStatus and shopStatus != ""'>
+			#{shopStatus},
+		</if>
+		<if test='null != message and message != ""'>
+			#{message},
+		</if>
+		<if test="null != createTime">
+			#{createTime},
+		</if>
+		<if test="null != updateTime">
+			#{updateTime}
+		</if>
+	</trim>
+  </sql>
+  
+  <select id="findAll" resultMap="JoinUsMapper">
+	<include refid="selectUserSql"/>
+  </select>
+  
+  <select id="findList" resultMap="JoinUsMapper">
+	<include refid="selectUserSql"/>
+	ORDER BY update_time desc LIMIT 0,60
+  </select>
+  
+  <insert id="save" useGeneratedKeys="true" keyProperty="id">
+	INSERT INTO yr_join_us (
+	<include refid="insertUserKey"/>)
+	values (
+	<include refid="insertUserValue"/>)
+  </insert>
+ 
+</mapper>

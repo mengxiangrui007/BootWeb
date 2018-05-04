@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="baidu-site-verification" content="i7M43Xxleh" />
+<title>盈然最新动态发布</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<script type="text/javascript" th:src="@{../js/upload/jquery-1.7.2.min.js}"></script>
+<script type="text/javascript" th:src="@{../js/upload/jquery-form.js}"></script>
+<style type="text/css">
+.ma_sc{ width: 90%; float:left; margin-left:5%; display: block;}
+.ma_sc strong{ width: 100%; float:left; height:24px; line-height:24px; margin:15px 0 8px 0; display:block;}
+.ma_sc strong a{ color:#ff0000; text-align:left;}
+#ma_bt{ width: 60%; height:24px; line-height:24px; float:left;}
+#ma_nr{ width: 100%; padding-bottom:20%; float:left;}
+#uploadimage{ width: 20%; height:24px; line-height:24px; float:left;}
+#btn{ width: 20%; height:24px; line-height:24px; float:left;}
+#message{ width: 100%; float:left; text-align:center; height:24px; line-height:24px; color: #ff0000;}
+</style>
+</head>
+<body>
+<div class="ma_sc">
+<div id="message"></div>
+<form id="upload" enctype="multipart/form-data" method="post">
+<!-- 1 -->
+<strong>文章标题：</strong>
+<input id="ma_bt" type="text" name="titleName" />
+<!-- 2 -->
+<strong>文章内容：</strong>
+<textarea id="ma_nr" name="content"></textarea>
+<!-- 3 -->
+<strong>图片上传：<a>注：1、图片大小：600*390。2、格式为：JPG/JPEG。3、建议大小不超50K</a></strong>
+<input type="file" name="file" id="uploadimage" />
+<input type="button" th:value="提交上传" id="btn" />
+</form>
+</div>
+<script type="text/javascript">  
+$(document).ready(function(){
+	$("#btn").click(function(){
+		if(confirm("确认提交上传")){
+			var imagePath = $("#uploadimage").val();
+			if (imagePath == ""){
+				alert("please upload image file",2);
+				return false;
+			}
+			var strExtension = imagePath.substr(imagePath.lastIndexOf('.') + 1);
+			if (strExtension!='jpg'){
+				if (strExtension!='bmp'){
+					if (strExtension!='png'){
+						alert("please upload file that is a image",2);
+						return false;
+					}
+				}
+			}
+			$("#upload").ajaxSubmit({
+				type : 'POST',
+				url : 'upload/uploadInfo',
+				success : function(result){
+					if(result.state=='0'){
+						$("#message").html(result.msg);
+					}else{
+						alert(result.msg+":"+result.data);
+					}
+				},
+				error : function(){
+					alert("上传失败，请检查网络后重试,上传文件太大");
+				}
+			});
+		}
+	})
+});
+</script>  
+</body>  
+</html>
