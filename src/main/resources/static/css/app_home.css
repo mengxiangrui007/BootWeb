@@ -31,8 +31,8 @@
 /*qiha*/
 .ap_ya_b_a{ width: 28%; position: absolute; z-index:2; top:0; left:0;}
 .ap_ya_b_a ul{ width: 100%; float: left;}
-.ap_ya_b_a ul li{ float: left; width: 100%; padding-bottom:12%; margin-bottom: 7%; display: block; cursor: pointer;}
-.ap_ya_b_a ul li a{ width:90%; float:left; padding:6% 0 -3% 2%; display:block; font-size: 1.1rem;}
+.ap_ya_b_a ul li{ float: left; width: 100%; padding-bottom:9%; margin-bottom: 7%; display: block; cursor: pointer;}
+.ap_ya_b_a ul li a{ width:90%; float:left; padding:6% 0 0 2%; display:block; font-size: 1.1rem;}
 .ap_ya_b_a ul .kjy_a{ background: url(../images/home_gywm_qh2.jpg) no-repeat left top #c65c21; background-size: 100%; border: 1px #c65c21 solid; color: #FFFFFF;}
 .ap_ya_b_a ul .kjy{ background: url(../images/home_gywm_qh1.jpg) no-repeat left top; background-size: 100%; border: 1px #c8c8c8 solid; color: #000000;}
 .ap_ya_c{ width: 100%; position: absolute; z-index:1; top:0; left:0;}
