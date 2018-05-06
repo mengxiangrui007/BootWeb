@@ -49,7 +49,7 @@ html {font-size:100%;}
 .dk_c{ width: 100%; float:left; background:#ffffff;}
 .dk_c ul{ width: 94%; float:left; margin:0 3% 0 3%; display:block;}
 .dk_c ul li{ width: 100%; float:left; padding:4% 0 4% 0; display:block; text-align: center; border-bottom: 1px #dfdfdf solid;}
-.dk_c ul li a{ color: #000000; font-size: 0.8rem;}
+.dk_c ul li a{ color: #000000; font-size: 1.6rem;}
 #cle_line{ border-bottom:none;}
 #opis{ display: none;}
 
@@ -60,7 +60,7 @@ html {font-size:100%;}
 .ap_fa{ width: 100%; float:left; clear: both; background: #000000; padding-top: 3%; padding-bottom: 3%; display: block;}
 .ap_fa p{ width: 100%; text-align:center; float:left; font-size: 0.6rem; margin-top:1%; display: block; color: #383837;}
 
-.ap_ea{ width: 20%; position: fixed; z-index:89; bottom:20%; right:2%;}
+.ap_ea{ width: 20%; position: fixed; z-index:99999; bottom:20%; right:2%;}
 .ap_ea em{ width:40%; float:right; margin-top: 50%; display: block;}
 .ap_ea em img{ width:100%; height: 100%; float: left;}
 .ap_ea i{ width:100%; float:left; background: #ffffff; padding-top: 10%; padding-bottom: 10%; display: block;}
