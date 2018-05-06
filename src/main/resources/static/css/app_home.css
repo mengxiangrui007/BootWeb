@@ -32,7 +32,7 @@
 .ap_ya_b_a{ width: 28%; position: absolute; z-index:2; top:0; left:0;}
 .ap_ya_b_a ul{ width: 100%; float: left;}
 .ap_ya_b_a ul li{ float: left; width: 100%; padding-bottom:12%; margin-bottom: 7%; display: block; cursor: pointer;}
-.ap_ya_b_a ul li a{ float: left; margin: 1px 0 -2px 3px; padding-top:5px; display:block; font-size: 1.1rem;}
+.ap_ya_b_a ul li a{ float:left; margin:6px 0 -2px 3px; display:block; font-size: 1.1rem;}
 .ap_ya_b_a ul .kjy_a{ background: url(../images/home_gywm_qh2.jpg) no-repeat left top #c65c21; background-size: 100%; border: 1px #c65c21 solid; color: #FFFFFF;}
 .ap_ya_b_a ul .kjy{ background: url(../images/home_gywm_qh1.jpg) no-repeat left top; background-size: 100%; border: 1px #c8c8c8 solid; color: #000000;}
 .ap_ya_c{ width: 100%; position: absolute; z-index:1; top:0; left:0;}
@@ -118,7 +118,7 @@
 .ap_xa_c_a{ width: 62%; float:right; margin-top: 9%; display: block;}
 .ap_xa_c_a span{ width: 100%; float:right; padding-bottom:9%; display: block; background:url(../images/app_home/xxzx/xxzx_mk_2.png) no-repeat top left; background-size: 100%;}
 .xxzx_b b { width: 90%; float:right; margin-top:82%; display:block; font-weight: normal; color:#ffffff; font-size:1.4rem; text-align: center;}
-.xxzx_b strong { width: 22%; float:right; padding:3.5% 5% 3% 5%; margin:4% 24% 0 0; display:block; text-align: center; background:#b56031; cursor: pointer;}
+.xxzx_b strong { width: 22%; float:right; padding:3.5% 5% 3% 5%; margin:4% 29% 0 0; display:block; text-align: center; background:#b56031; cursor: pointer;}
 .xxzx_b strong a{ color: #FFFFFF; font-weight: normal; font-size: 1rem;}
 
 /*ap-mdzs*/
