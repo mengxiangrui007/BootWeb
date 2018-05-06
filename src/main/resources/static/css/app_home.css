@@ -31,8 +31,8 @@
 /*qiha*/
 .ap_ya_b_a{ width: 28%; position: absolute; z-index:2; top:0; left:0;}
 .ap_ya_b_a ul{ width: 100%; float: left;}
-.ap_ya_b_a ul li{ float: left; width: 100%; padding-bottom:9%; margin-bottom: 7%; display: block; cursor: pointer;}
-.ap_ya_b_a ul li a{ width:90%; float:left; padding:6% 0 0 2%; display:block; font-size: 1.1rem;}
+.ap_ya_b_a ul li{ float: left; width: 100%; padding-bottom:8%; margin-bottom: 7%; display: block; cursor: pointer;}
+.ap_ya_b_a ul li a{ width:90%; float:left; padding:7% 0 0 2%; display:block; font-size: 1.1rem;}
 .ap_ya_b_a ul .kjy_a{ background: url(../images/home_gywm_qh2.jpg) no-repeat left top #c65c21; background-size: 100%; border: 1px #c65c21 solid; color: #FFFFFF;}
 .ap_ya_b_a ul .kjy{ background: url(../images/home_gywm_qh1.jpg) no-repeat left top; background-size: 100%; border: 1px #c8c8c8 solid; color: #000000;}
 .ap_ya_c{ width: 100%; position: absolute; z-index:1; top:0; left:0;}
@@ -93,8 +93,8 @@
 	text-decoration: none;}
 .MM_slide_nav.prev{ width:7%; right: 18%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_left1.jpg) no-repeat top left; background-size: 100%;}
 .MM_slide_nav.prev:hover{width:7%; right: 18%; padding-bottom:5%; display:block;background:url(../images/home_gywm_zx_left2.jpg) no-repeat top left; background-size: 100%;}
-.MM_slide_nav.next{width:7%; right: 11%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right1.jpg) no-repeat top left; background-size: 100%;}
-.MM_slide_nav.next:hover{width:7%; right: 11%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right2.jpg) no-repeat top left; background-size: 100%;}
+.MM_slide_nav.next{width:7%; right: 10.5%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right1.jpg) no-repeat top left; background-size: 100%;}
+.MM_slide_nav.next:hover{width:7%; right: 10.5%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right2.jpg) no-repeat top left; background-size: 100%;}
 
 /*ap-xxzx*/
 .ap_xa{ width: 100%; float:left; margin-top: 15%; display: block; background:url(../images/app_home/xxzx/xxzx_bg.jpg) no-repeat top left; background-size: 100%;}
