@@ -93,8 +93,8 @@
 	text-decoration: none;}
 .MM_slide_nav.prev{ width:7%; right: 18%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_left1.jpg) no-repeat top left; background-size: 100%;}
 .MM_slide_nav.prev:hover{width:7%; right: 18%; padding-bottom:5%; display:block;background:url(../images/home_gywm_zx_left2.jpg) no-repeat top left; background-size: 100%;}
-.MM_slide_nav.next{width:7%; right: 12%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right1.jpg) no-repeat top left; background-size: 100%;}
-.MM_slide_nav.next:hover{width:7%; right: 12%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right2.jpg) no-repeat top left; background-size: 100%;}
+.MM_slide_nav.next{width:7%; right: 10%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right1.jpg) no-repeat top left; background-size: 100%;}
+.MM_slide_nav.next:hover{width:7%; right: 10%; padding-bottom:5%; display:block; background:url(../images/home_gywm_zx_right2.jpg) no-repeat top left; background-size: 100%;}
 
 /*ap-xxzx*/
 .ap_xa{ width: 100%; float:left; margin-top: 15%; display: block; background:url(../images/app_home/xxzx/xxzx_bg.jpg) no-repeat top left; background-size: 100%;}
