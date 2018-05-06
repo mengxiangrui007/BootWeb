@@ -162,7 +162,7 @@
 .ap_mdb strong{ width: 84%; float: left; text-align:center; margin:18% 0 0 8%; display: block; color: #161616; letter-spacing:1px; font-size: 1.1rem;}
 .ap_mdb i{ width: 84%; float:left; text-align:center; padding-bottom: 1%; margin:5% 0 0 8%; display: block;}
 .ap_mdb i a{ width: 6%; border-bottom: 1px #a72f27 solid; float: left; margin-left: 47%; display: block;}
-.ap_mdb p{ width: 84%; float: left; margin:6% 0 0 8%; display: block; color: #6b6b6b; font-size: 1rem; line-height: 52px;}
+.ap_mdb p{ width: 84%; float: left; margin:6% 0 0 8%; display: block; color: #6b6b6b; font-size: 0.9rem; line-height: 52px;}
 
 /* mdcz */
 .ap_mdc{ width: 100%; float:left; margin-top:12%; display: block;}
