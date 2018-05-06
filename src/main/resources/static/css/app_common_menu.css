@@ -49,7 +49,7 @@ html {font-size:100%;}
 .dk_c{ width: 100%; float:left; background:#ffffff;}
 .dk_c ul{ width: 94%; float:left; margin:0 3% 0 3%; display:block;}
 .dk_c ul li{ width: 100%; float:left; padding:4% 0 4% 0; display:block; text-align: center; border-bottom: 1px #dfdfdf solid;}
-.dk_c ul li a{ color: #000000; font-size: 1.6rem;}
+.dk_c ul li a{ color: #000000; font-size: 1.2rem;}
 #cle_line{ border-bottom:none;}
 #opis{ display: none;}
 
