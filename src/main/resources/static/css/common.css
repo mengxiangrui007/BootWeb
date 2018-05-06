@@ -8,6 +8,6 @@ li{ list-style: none;}
 a{ text-decoration: none;}
 a:hover{ text-decoration: none;}
 table{border-collapse:collapse;}
-
+select::-ms-expand{ display: none;}
 
 

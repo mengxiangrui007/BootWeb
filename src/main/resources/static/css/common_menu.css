@@ -9,12 +9,12 @@
 .ha_b{ float: left; width: 37%;}
 .ha_b li{ height: 52px; line-height: 52px; float: left; padding: 0 8% 0 10%;}
 .ha_d{ float: right; width: 37%;}
-.ha_d li{ height: 52px; line-height: 52px; float: left; padding: 0 8% 0 10%;}
-.li_3 { position: relative; z-index: 100;}
-.li_3_content { position: absolute; top: 99%; left: -68%; line-height: 28px; z-index: 99; display: none; width: 240%; }
+.ha_d li{ height: 52px; line-height: 52px; float: left; padding: 0 8% 0 10%; display: block;}
+.li_3 { position: relative; z-index: 100; top:-1px;}
+.li_3_content { position: absolute; top: 99%; left: -68%; line-height: 28px; z-index: 99; display: none; width: 240%;}
 .li_3_content a:hover { color: #e95e10 !important; font-weight: normal;}
 .li_3_content dt { width:100%; float: left;}
-.li_3_content dt i{ width:30%;border-bottom: 1px solid #FE7700; float: left; margin-left: 35%; display: block;}
+.li_3_content dt i{ width:30%; float: left; height:1px; border-bottom: 1px solid #FE7700; margin-left: 35%; display: block;}
 .li_3_content dd { width:100%; background:#ffffff; text-align: center; float: left;}
 .li_3_content dd a{ width:100%; font-size: 12px; font-weight: normal;}
 .firstItem{ padding-top: 18px;}
@@ -26,8 +26,8 @@
 /*footer*/
 .fa_a{ width: 100%; float:left; clear: both;}
 
-.ea_a{ width: 100%; float:left; background:url(../images/foot_bg.jpg) no-repeat top left; background-size: 100%;}
-.ea_a_a{ width: 68%; margin: 0 auto; padding-bottom: 13%;}
+.ea_a{ width: 100%; float:left; background:url(../images/foot_bg.jpg) no-repeat top left;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/foot_bg.jpg',sizingMethod='scale'); background-size: 100%; padding-bottom:2.2%; display: block;}
+.ea_a_a{ width: 68%; margin: 0 auto;}
 .ea_b{ width: 100%; float: left; margin-top: 2%; display: block;}
 .ea_b em{ width: 10%; float: left;}
 .ea_b em img{ width: 100%; height: 100%;}
@@ -39,24 +39,25 @@
 .ea_b_b ul li{width: 85%; background: url(../images/foot_b1.png) no-repeat left center; font-size: 12px; background-size: 10%; padding:4% 0 4% 15%; float: left; display: block;}
 .ea_b_b ul li a{ color: #6f6e6c; font-size: 12px;}
 
-.ea_c{ width: 100%; float:left; background: #0c0b0a;}
-.ea_c_c{ width: 68%; margin: 0 auto; padding-bottom: 2.8%;}
+.ea_c{ width: 100%; float:left; background: #0c0b0a; padding-bottom: 0.5%; display: block;}
+.ea_c_c{ width: 68%; margin: 0 auto;}
 .ea_c_c p{ width: 68%; float: left; font-size: 12px; padding-top: 1.2%; color: #383837;}
 .ea_c_c span{ width: 30%; float: right;}
 .ea_c_c span em{ width: 34%; text-align:center; float: right; font-size: 12px; padding-top: 3.8%; display: block; color: #383837;}
 .ea_c_c i{ width: 50%; float: right; display: block; padding-top: 2.5%;}
 .ea_c_c i a{ width: 19%; float: right; padding-bottom:19%; margin-right: 12%; display: block; cursor: pointer;}
+*+html .ea_c_c i a{ width: 19%; float: right; padding-bottom:8%; margin-right: 12%; display: block; cursor: pointer;}
 .button_weibo{ background: url(../images/foot_wb.jpg) no-repeat left center; background-size: 100%;}
 .jiathis_button_weixin{ background: url(../images/foot_wx.jpg) no-repeat left center; background-size: 100%;}
 .button_qq{ background: url(../images/foot_qq.jpg) no-repeat left center; background-size: 100%;}
 
-.ea_m{ width: 9%; position: fixed; z-index:89; bottom: 18%; right:0;}
+.ea_m{ width: 9%; position: fixed; z-index:89; bottom: 12%; right:0;}
 .tophb{ width: 100%; float: left;}
 .tophb dl{ width: 100%; float: left; margin-bottom: 20%; display: block;}
 .tophb_a em{ width: 100%; float: left;}
 .tophb_a em img{ width: 100%; height: 100%; float: left;}
 .tophb_a i{ width: 100%; float: left; line-height: 26px; text-align: center; color: #FE7700; font-size: 12px;}
-.ea_m_a{ width: 100%; float: left; margin-top: 50%; display: block;}
+.ea_m_a{ width: 100%; float: left; margin-top: 40%; display: block;}
 .ea_m_a em{ width:36%; float:left;}
 .ea_m_a em img{ width:100%; height: 100%; float: left;}
 

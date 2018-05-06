@@ -1,39 +1,32 @@
-html {font-size:15px;}
-@media screen and (min-width:480px) and (max-width:639px) {
-    html {
-        font-size: 20px
-    }
-}
-@media screen and (min-width:640px) and (max-width:719px) {
-    html {
-        font-size: 25px
-    }
-}
-@media screen and (min-width:720px) and (max-width:749px) {
-    html {
-        font-size: 27.5px
-    }
-}
-@media screen and (min-width:750px) and (max-width:799px) {
-    html {
-        font-size: 28.5px
-    }
-}
-@media screen and (min-width:800px) and (max-width:959px) {
-    html {
-        font-size: 30px
-    }
-}
-@media screen and (min-width:960px) and (max-width:1079px) {
-    html {
-        font-size: 35px
-    }
-}
-@media screen and (min-width:1080px) {
-    html {
-        font-size: 37px
-    }
-}
+html {font-size:100%;}
+@media only screen and (min-width:320px) and (orientation:portrait){  
+    html{font-size:100%;}  
+}  
+@media only screen and (min-width:360px) and (orientation:portrait){  
+    html{font-size:125%;}  
+}  
+@media only screen and (min-width:400px) and (orientation:portrait){  
+    html{font-size:150%;}  
+}  
+  
+@media only screen and (min-width:600px) and (orientation:portrait){  
+    html{font-size:200%;}  
+}  
+@media only screen and (min-width:480px) and (orientation:landscape){  
+    html{font-size:100%;}  
+}  
+@media only screen and (min-width:580px) and (orientation:landscape){  
+    html{font-size:107%;}  
+}  
+@media only screen and (min-width:730px) and (orientation:landscape){  
+    html{font-size:130%;}  
+}  
+@media only screen and (min-width:900px) and (orientation:landscape){  
+    html{font-size:175%;}  
+}  
+@media only screen and (min-width:992px){  
+    html{font-size:200%;}  
+}  
 /*header*/
 .ap_ha{ width: 100%; margin: 0 auto; position: relative; padding-bottom:15%; display: block; z-index: 9999;}
 .dao_a{ width: 100%; margin: 0 auto;}
@@ -45,6 +38,7 @@ html {font-size:15px;}
 .dl_b img{ width: 100%; height: 100%; float:left; cursor: pointer;}
 .dl_b_a{ width: 8%; float:left; margin:3% 2.5% 3% 2.5%; display:block;}
 .dl_b_b{ width: 8%; float:right; margin:3% 2.5% 3% 2.5%; display:block;}
+.dl_sf{ background:#ffffff;}
 .dao_b{ width: 100%; margin: 0 auto;}
 .dk_a{ width: 100%; position:absolute; top:0; z-index:3;}
 .dk_b{ width: 100%; float:left; background:#ffffff; border-bottom: 1px #dfdfdf solid;}
@@ -55,7 +49,7 @@ html {font-size:15px;}
 .dk_c{ width: 100%; float:left; background:#ffffff;}
 .dk_c ul{ width: 94%; float:left; margin:0 3% 0 3%; display:block;}
 .dk_c ul li{ width: 100%; float:left; padding:4% 0 4% 0; display:block; text-align: center; border-bottom: 1px #dfdfdf solid;}
-.dk_c ul li a{ color: #000000; font-size: 16px;}
+.dk_c ul li a{ color: #000000; font-size: 0.8rem;}
 #cle_line{ border-bottom:none;}
 #opis{ display: none;}
 
@@ -64,11 +58,11 @@ html {font-size:15px;}
 
 /*footer*/
 .ap_fa{ width: 100%; float:left; clear: both; background: #000000; padding-top: 3%; padding-bottom: 3%; display: block;}
-.ap_fa p{ width: 100%; text-align:center; float:left; font-size: 12px; margin-top:1%; display: block; color: #383837;}
+.ap_fa p{ width: 100%; text-align:center; float:left; font-size: 0.6rem; margin-top:1%; display: block; color: #383837;}
 
 .ap_ea{ width: 20%; position: fixed; z-index:89; bottom:20%; right:2%;}
 .ap_ea em{ width:40%; float:right; margin-top: 50%; display: block;}
 .ap_ea em img{ width:100%; height: 100%; float: left;}
 .ap_ea i{ width:100%; float:left; background: #ffffff; padding-top: 10%; padding-bottom: 10%; display: block;}
-.ap_ea i a{ width:100%; float:left; font-size: 12px; text-align: center; color: #FE7700; margin-top:3%; display: block;}
+.ap_ea i a{ width:100%; float:left; font-size: 0.6rem; text-align: center; color: #FE7700; margin-top:3%; display: block;}
 
