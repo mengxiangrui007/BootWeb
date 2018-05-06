@@ -1,25 +1,25 @@
-/* app-qiehuan-wm-录没脪鲁脙忙 */
+/* app-qiehuan-wm-见页面 */
 
-/* qiehuan-pp-录没脪鲁脙忙 */
+/* qiehuan-pp-见页面 */
 
 /* qiehuan-xx */
 .ap_qie_x{ width: 100%; float:left; border-top: 1px #cecece solid; border-bottom: 1px #cecece solid;}
 .ap_qie_x em{ width: 11%; float:left; cursor: pointer;}
 .ap_qie_x em img{ width: 100%; height: 100%; float: left;}
 .ap_qie_x ul{ width: 89%; float: left;}
-.ap_qie_x ul li{ font-size:0.6rem; width: 99%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center;}
+.ap_qie_x ul li{ font-size:1rem; width: 99%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center;}
 /* qiehuan-md */
 .ap_qie_m{ width: 100%; float:left; border-top: 1px #cecece solid; border-bottom: 1px #cecece solid;}
 .ap_qie_m em{ width: 11%; float:left; cursor: pointer;}
 .ap_qie_m em img{ width: 100%; height: 100%; float: left;}
 .ap_qie_m ul{ width: 89%; float: left; height:35px;}
-.ap_qie_m ul li{ font-size:0.6rem; width: 99%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center;}
+.ap_qie_m ul li{ font-size:1rem; width: 99%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center;}
 /* qiehuan-jm */
 .ap_qie_j{ width: 100%; float:left; border-top: 1px #cecece solid; border-bottom: 1px #cecece solid;}
 .ap_qie_j em{ width: 11%; float:left; cursor: pointer;}
 .ap_qie_j em img{ width: 100%; height: 100%; float: left;}
 .ap_qie_j ul{ width: 89%; float: left;}
-.ap_qie_j ul li{ font-size:0.6rem; width: 99%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center;}
+.ap_qie_j ul li{ font-size:1rem; width: 99%; float: left; padding-top: 2.9%; padding-bottom: 2.9%; display: block; border-left: 1px #cecece solid; text-align: center;}
 
 /* ap-wm */
 .ap_jja{ width: 100%; float:left; margin:8% 0 8% 0; display: block;}
@@ -28,22 +28,22 @@
 .ap_jjb{ width: 100%; float:left;}
 .ap_jjb em{ width: 72%; float:right;}
 .ap_jjb em img{ width: 100%; height: 100%; float:left;}
-.ap_jjb strong{ width: 100%; float:left; margin-top: 15%; display: block; font-size: 0.8rem; color: #c65c21;}
+.ap_jjb strong{ width: 100%; float:left; margin-top: 15%; display: block; font-size: 1.2rem; color: #c65c21;}
 .ap_jjb b{ width: 100%; float:left; margin-top: 3%; display: block;}
 .ap_jjb b a{ width: 5%; float:left; border:1px #000000 solid;}
-.ap_jjb p{ width: 100%; float:left; line-height:32px !important; margin-top: 3%; display: block; font-size: 0.7rem;}
+.ap_jjb p{ width: 100%; float:left; line-height:32px !important; margin-top: 3%; display: block; font-size: 1.1rem;}
 /* qywh */
 .ap_jjc{ width: 100%; float:left;}
 .ap_jjc em{ width: 100%; float:left;}
 .ap_jjc em img{ width: 100%; height: 100%; float:left;}
 .ap_jjc dl{ width: 100%; float:left; margin-top: 5%; display: block;}
 .ap_jjc_a{ width: 100%; float:left; margin-top: 5%; display: block;}
-.ap_jjc_a strong{ width: 100%; float:left; font-size: 0.7rem; color: #c65c21;}
-.ap_jjc_a p{ width: 100%; float:left; line-height:32px !important; margin-top: 2%; display: block; font-size: 0.6rem;}
+.ap_jjc_a strong{ width: 100%; float:left; font-size: 1.1rem; color: #c65c21;}
+.ap_jjc_a p{ width: 100%; float:left; line-height:32px !important; margin-top: 2%; display: block; font-size: 1rem;}
 .ap_jjc_b{ width: 100%; float:left; margin-top: 5%; display: block; position: relative;}
 .ap_jjc_b span{ width: 53%; float:left; margin-top: 0%; display: block;}
-.ap_jjc_b span strong{ width: 100%; float:left; font-size: 0.7rem; color: #c65c21;}
-.ap_jjc_b span p{ width: 100%; float:left; line-height:32px !important; margin-top: 2%; display: block; font-size: 0.6rem;}
+.ap_jjc_b span strong{ width: 100%; float:left; font-size: 1.1rem; color: #c65c21;}
+.ap_jjc_b span p{ width: 100%; float:left; line-height:32px !important; margin-top: 2%; display: block; font-size: 1rem;}
 .ap_jjc_b span b{ width: 100%; float:left; position: absolute; bottom: 0; left: 0;}
 .ap_jjc_b span b a{ width: 5%; float:left; border: 1px #000000 solid;}
 .ap_jjc_b i{ width: 53%; float:left;}
@@ -82,32 +82,32 @@
 .ap_ppe dt{ width: 100%; float: left;}
 .ap_ppe dt img{ width: 100%; height: 100%; float: left;}
 .ap_ppe dd{ width: 86%; float: left; margin:-6% 0 0 7%; display:block; padding-bottom: 2.5%; border-bottom:1px #e1dfde solid; background: #fffbfa; -webkit-box-shadow:2px 2px 2px #e1dfde; -moz-box-shadow:2px 2px 2px #e1dfde;}
-.ap_ppe dd p{width: 95%; float: left; font-size: 0.5rem; margin: 5% 0 0 2.5%; display: block; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ap_ppe dd p{width: 95%; float: left; font-size: 0.9rem; margin: 5% 0 0 2.5%; display: block; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .ap_ppe dd p a{ color: #7c7a7a;}
 .ap_ppe dd span{width: 95%; float: left; margin: 3% 0 0 2.5%; display: block;}
-.ap_ppe dd span b{ width: 50%; float: left; text-align:left; font-size: 0.5rem; display: block; color: #939393; font-weight:normal;}
-.ap_ppe dd span i{ width: 50%; float: right; text-align:right; font-size: 0.5rem; display: block; color: #939393;}
+.ap_ppe dd span b{ width: 50%; float: left; text-align:left; font-size: 0.9rem; display: block; color: #939393; font-weight:normal;}
+.ap_ppe dd span i{ width: 50%; float: right; text-align:right; font-size: 0.9rem; display: block; color: #939393;}
 .ap_ppe dd span i a{ color: #7c7a7a;}
-.ap_ppe strong{ width: 100%; float: left; text-align:center; font-size: 0.5rem; margin-top: 12%; display: block;}
-.ap_ppe strong a{ width: 20%; border:1px #7c7a7a solid; padding:2% 8% 2% 8%; display:inline; text-align: center; background:#ffffff; color:#7c7a7a; font-weight: normal; font-size: 0.5rem; cursor: pointer;}
+.ap_ppe strong{ width: 100%; float: left; text-align:center; font-size: 0.9rem; margin-top: 12%; display: block;}
+.ap_ppe strong a{ width: 20%; border:1px #7c7a7a solid; padding:2% 8% 2% 8%; display:inline; text-align: center; background:#ffffff; color:#7c7a7a; font-weight: normal; font-size: 0.9rem; cursor: pointer;}
 /* ppzx-xq */
 .ap_ppg{ width: 100%; float:left;}
 .ap_ppg_a{ width: 100%; margin: 0 auto;}
-.ap_ppg_a strong{ width: 100%; float:left; text-align:center; line-height: 24px; font-size: 0.6rem; color: #c65c21;}
+.ap_ppg_a strong{ width: 100%; float:left; text-align:center; line-height: 24px; font-size: 1rem; color: #c65c21;}
 .ap_ppg_a i{ width: 100%; float:left; text-align:center; padding-bottom: 2%; margin-top: 5%; display: block;}
 .ap_ppg_a i a{ width: 10%; border-bottom: 1px #000000 solid; float: left; margin-left: 45%; display: block;}
-.ap_ppg_a p{ width: 100%; float:left; line-height: 24px; margin-top: 5%; display: block; font-size: 0.5rem; color: #606060;}
+.ap_ppg_a p{ width: 100%; float:left; line-height: 24px; margin-top: 5%; display: block; font-size: 0.9rem; color: #606060;}
 .ap_ppg_b{ width: 100%; margin: 0 auto;}
-.ap_ppg_b strong{ width: 100%; float:left; text-align:center; margin-top: 15%; display: block; line-height: 32px; font-size: 0.7rem; color: #c65c21;}
+.ap_ppg_b strong{ width: 100%; float:left; text-align:center; margin-top: 15%; display: block; line-height: 32px; font-size: 1.1rem; color: #c65c21;}
 .ap_ppg_b i{ width: 100%; float:left; text-align:center; padding-bottom: 1%; margin-top: 3%; display: block;}
 .ap_ppg_b i a{ width: 4%; border-bottom: 1px #000000 solid; float: left; margin-left: 48%; display: block;}
 .ap_ppg_b dl{ width: 100%; float: left; margin-top: 10%; display: block;}
 .ap_ppg_b dd{ width: 100%; float: left; padding-bottom: 2.5%; display:block; background: #fffbfa; -webkit-box-shadow:2px 2px 2px #e1dfde; -moz-box-shadow:2px 2px 2px #e1dfde;}
-.ap_ppg_b dd p{width: 95%; float: left; font-size: 0.5rem; margin: 5% 0 0 2.5%; display: block; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ap_ppg_b dd p{width: 95%; float: left; font-size: 0.9rem; margin: 5% 0 0 2.5%; display: block; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .ap_ppg_b dd p a{ color: #7c7a7a;}
 .ap_ppg_b dd span{width: 95%; float: left; margin: 3% 0 0 2.5%; display: block;}
-.ap_ppg_b dd span b{ width: 50%; float: left; text-align:left; font-size: 0.5rem; display: block; color: #939393; font-weight:normal;}
-.ap_ppg_b dd span em{ width: 50%; float: right; text-align:right; font-size: 0.5rem; display: block; color: #939393;}
+.ap_ppg_b dd span b{ width: 50%; float: left; text-align:left; font-size: 0.9rem; display: block; color: #939393; font-weight:normal;}
+.ap_ppg_b dd span em{ width: 50%; float: right; text-align:right; font-size: 0.9rem; display: block; color: #939393;}
 .ap_ppg_b dd span em a{ color: #7c7a7a;}
 
 /* ap-xx */
@@ -159,17 +159,17 @@
 
 /* mdxx */
 .ap_mdb{ width: 90%; float:left; margin-left:5%; padding-bottom: 5%; display: block;background: url(../images/app_md/mdzs_zt_1.jpg) no-repeat top left; background-size: 100%;}
-.ap_mdb strong{ width: 84%; float: left; text-align:center; margin:18% 0 0 8%; display: block; color: #161616; letter-spacing:1px; font-size: 0.6rem;}
+.ap_mdb strong{ width: 84%; float: left; text-align:center; margin:18% 0 0 8%; display: block; color: #161616; letter-spacing:1px; font-size: 1rem;}
 .ap_mdb i{ width: 84%; float:left; text-align:center; padding-bottom: 1%; margin:5% 0 0 8%; display: block;}
 .ap_mdb i a{ width: 6%; border-bottom: 1px #a72f27 solid; float: left; margin-left: 47%; display: block;}
-.ap_mdb p{ width: 84%; float: left; margin:6% 0 0 8%; display: block; color: #6b6b6b; font-size: 0.6rem; line-height: 32px;}
+.ap_mdb p{ width: 84%; float: left; margin:6% 0 0 8%; display: block; color: #6b6b6b; font-size: 1rem; line-height: 32px;}
 
 /* mdcz */
 .ap_mdc{ width: 100%; float:left; margin-top:12%; display: block;}
 .ap_mdc img{ width: 100%; height: 100%; float:left;}
 .ap_mdd{ width: 100%; float:left; margin-top:7%; display: block;}
 #procent{ width: 42%; float: left; padding-bottom:3%; margin-right:2%; display: block; background: url(../images/app_home_mdzs_an1.jpg) no-repeat top left; background-size: 100%;}
-#procent select{ width: 99%; float: left; background:none; border:none; padding:4.5% 0 1% 3%; display: block; font-size: 0.6rem;}
+#procent select{ width: 99%; float: left; background:none; border:none; padding:4.5% 0 1% 3%; display: block; font-size: 1rem;}
 #anniu{ width: 12%; float: left; padding-bottom:9.3%; display: block; background: url(../images/app_home_mdzs_an2.jpg) no-repeat top left; background-size: 100%; cursor: pointer;}
 
 /* qiehuan */
@@ -214,29 +214,29 @@
 .ap_jmd{ width: 100%; float: left; margin-top: 5%; display: block;}
 .ap_input_all{ width: 100%; float:left; margin-top: 2%; display: block;}
 .ap_input_all #ap_in_name{ width: 90%; float:left; background: url(../images/app_jm/jmyq_1.jpg) no-repeat; background-size: 100%; padding-bottom: 2%; display: block;}
-.ap_input_all #ap_in_name input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.5rem;}
+.ap_input_all #ap_in_name input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.9rem;}
 .ap_input_all #ap_in_phone{ width: 90%; float:left; background: url(../images/app_jm/jmyq_2.jpg) no-repeat; background-size: 100%; padding-bottom: 2%; display: block;}
-.ap_input_all #ap_in_phone input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.5rem;}
+.ap_input_all #ap_in_phone input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.9rem;}
 .ap_input_all #ap_in_qq{ width: 90%; float:left; background: url(../images/app_jm/jmyq_3.jpg) no-repeat; background-size: 100%; padding-bottom: 2%; display: block;}
-.ap_input_all #ap_in_qq input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.5rem;}
+.ap_input_all #ap_in_qq input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.9rem;}
 .ap_input_all #ap_in_email{ width: 90%; float:left; background: url(../images/app_jm/jmyq_4.jpg) no-repeat; background-size: 100%; padding-bottom: 2%; display: block;}
-.ap_input_all #ap_in_email input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.5rem;}
+.ap_input_all #ap_in_email input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.9rem;}
 .ap_input_all #ap_in_adress{ width: 90%; float:left; background: url(../images/app_jm/jmyq_7.jpg) no-repeat; background-size: 100%; padding-bottom: 2%; display: block;}
-.ap_input_all #ap_in_adress input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.5rem;}
+.ap_input_all #ap_in_adress input{ width: 88%; float:left; border: 0px; padding:1.5% 0 0.5% 1%; margin-top: 1%; margin-left: 8%; display: block; font-size: 0.9rem;}
 
 .ap_input_all #ap_jm_procent{ width: 40%; float: left; background: url(../images/app_jm/jmyq_5.jpg) no-repeat; background-size: 100%; padding-bottom: 1.8%; margin-bottom: -0.4%; display: block;}
-.ap_input_all #ap_jm_procent select{ width: 77%; float: left; border: none; padding:3% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.5rem; background: none;}
+.ap_input_all #ap_jm_procent select{ width: 77%; float: left; border: none; padding:3% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.9rem; background: none;}
 .ap_input_all #ap_jm_shop{ width: 45%; float: left; background: url(../images/app_jm/jmyq_6.jpg) no-repeat; background-size: 100%; padding-bottom: 1.8%; margin-left: 5%; margin-bottom: -0.4%; display: block;}
-.ap_input_all #ap_jm_shop select{ width: 77%; float: left; border: none; padding:2% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.5rem; background: none;}
+.ap_input_all #ap_jm_shop select{ width: 77%; float: left; border: none; padding:2% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.9rem; background: none;}
 .ap_input_all #ap_jm_kdjy{ width: 40%; float: left; background: url(../images/app_jm/jmyq_8.jpg) no-repeat; background-size: 100%; padding-bottom: 1.8%; margin-bottom: -0.4%; display: block;}
-.ap_input_all #ap_jm_kdjy select{ width: 77%; float: left; border: none; padding:3% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.5rem; background: none;}
+.ap_input_all #ap_jm_kdjy select{ width: 77%; float: left; border: none; padding:3% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.9rem; background: none;}
 .ap_input_all #ap_jm_ywdp{ width: 45%; float: left; background: url(../images/app_jm/jmyq_9.jpg) no-repeat; background-size: 100%; padding-bottom: 1.8%; margin-left: 5%; margin-bottom: -0.4%; display: block;}
-.ap_input_all #ap_jm_ywdp select{ width: 77%; float: left; border: none; padding:2% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.5rem; background: none;}
+.ap_input_all #ap_jm_ywdp select{ width: 77%; float: left; border: none; padding:2% 0 2% 1%; margin-top: 2%; margin-left: 17%; display: block; font-size: 0.9rem; background: none;}
 .ap_input_all em{ width: 10%; float:left; margin-top:0%; display: block;}
 .ap_input_all em img{ width: 100%; height:100%; float:left;}
 
 .ap_input_all #ap_in_liuyan{ width: 90%; float:left; background: url(../images/app_jm/jmyq_10.jpg) no-repeat; background-size: 100%; padding-bottom: 4%; display: block;}
-.ap_input_all #ap_in_liuyan textarea{ width: 89%; float: left; border: none; padding-bottom:13.5%; margin: 2.5% 0 0 8.5%; display: block; font-size: 0.5rem;}
+.ap_input_all #ap_in_liuyan textarea{ width: 89%; float: left; border: none; padding-bottom:13.5%; margin: 2.5% 0 0 8.5%; display: block; font-size: 0.9rem;}
 
 .ap_input_all #ap_in_tijiao{ width: 90%; float:left;}
 .ap_input_all #ap_in_tijiao img{ width: 100%; height: 100%; float:left;}
@@ -245,11 +245,11 @@
 .ap_jmk{ width: 100%; float: left; margin-top: 10%; display:block;}
 .ap_jmk dl{ width: 100%; float: left;}
 .ap_jmk dl dd{ width: 32%; float: left;}
-.ap_jmk dl dd b{ width: 100%; float: left; font-size: 0.5rem;}
-.ap_jmk dl dd em{ width: 82%; float: left; padding:2% 0.5% 2% 18%; margin-top:5%; display:block; background: url(../images/home_lxwm_phone.jpg) no-repeat top left; font-size: 0.5rem; background-size: 15%;}
+.ap_jmk dl dd b{ width: 100%; float: left; font-size: 0.9rem;}
+.ap_jmk dl dd em{ width: 82%; float: left; padding:2% 0.5% 2% 18%; margin-top:5%; display:block; background: url(../images/home_lxwm_phone.jpg) no-repeat top left; font-size: 0.9rem; background-size: 15%;}
 .ap_jmk dl dt{ width: 66%; float: left;}
-.ap_jmk dl dt b{ width: 100%; float: left; font-size: 0.5rem;}
-.ap_jmk dl dt em{ width: 92%; float: left; padding:0.9% 0.5% 2.2% 10%; margin-top:1.8%; display:block; background: url(../images/home_lxwm_adress.jpg) no-repeat top left; font-size: 0.5rem; background-size: 7%;}
+.ap_jmk dl dt b{ width: 100%; float: left; font-size: 0.9rem;}
+.ap_jmk dl dt em{ width: 92%; float: left; padding:0.9% 0.5% 2.2% 10%; margin-top:1.8%; display:block; background: url(../images/home_lxwm_adress.jpg) no-repeat top left; font-size: 0.9rem; background-size: 7%;}
 
 
 
