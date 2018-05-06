@@ -159,7 +159,7 @@
 
 /* mdxx */
 .ap_mdb{ width: 90%; float:left; margin-left:5%; padding-bottom: 5%; display: block;background: url(../images/app_md/mdzs_zt_1.jpg) no-repeat top left; background-size: 100%;}
-.ap_mdb strong{ width: 84%; float: left; text-align:center; margin:18% 0 0 8%; display: block; color: #161616; letter-spacing:1px; font-size: 1rem;}
+.ap_mdb strong{ width: 84%; float: left; text-align:center; margin:18% 0 0 8%; display: block; color: #161616; letter-spacing:1px; font-size: 1.1rem;}
 .ap_mdb i{ width: 84%; float:left; text-align:center; padding-bottom: 1%; margin:5% 0 0 8%; display: block;}
 .ap_mdb i a{ width: 6%; border-bottom: 1px #a72f27 solid; float: left; margin-left: 47%; display: block;}
 .ap_mdb p{ width: 84%; float: left; margin:6% 0 0 8%; display: block; color: #6b6b6b; font-size: 1rem; line-height: 52px;}
