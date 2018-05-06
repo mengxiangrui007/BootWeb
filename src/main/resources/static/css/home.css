@@ -215,7 +215,7 @@
 *+html .TT_slide_nav.next:hover{width: 5.5%; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home_md_right2.png',sizingMethod='scale'); background-size: 90%;right: 0;padding-bottom:6%;}
 
 /*lxwm*/
-.la_a{ width: 100%; float:left; background:url(../images/home/lxwm/lxwm_bg.jpg) no-repeat top left;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/lxwm/lxwm_bg.jpg',sizingMethod='scale'); background-size: 100%; margin-top: 6%; padding-bottom:8%; display: block;}
+.la_a{ width: 100%; float:left; background:url(../images/home/lxwm/lxwm_bg.jpg) no-repeat top left;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/lxwm/lxwm_bg.jpg',sizingMethod='scale'); background-size: 100%; margin-top: 6%; padding-bottom:7.2%; display: block;}
 .la_a_a{ width: 68%; margin: 0 auto;} /* padding-bottom:38.5%; */
 
 .la_b{ width: 66%; float: left; margin: 6% 0 0 0; display: block;}
